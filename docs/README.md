@@ -69,4 +69,5 @@ add profile view for user w/ favorite mountains.
 - [ ] Interactive trail maps w/ basic tags (text only)
 - [ ] Advanced tag types (photos, hazards, features)
 - [ ] User profile page / favorites
+- [ ] Submit new mountain form
 - [ ] Marking reviews as funny/useful/cool
