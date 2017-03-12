@@ -28,6 +28,7 @@
 | num_lifts        | integer   | not null              |
 | avg_price        | string    | not null              |
 | website_url      | string    | not null              |
+| profile_pic_url  | string    | not null              |
 | trail_map_url    | string    | not null              |
 | lat              | float     | not null              |
 | long             | float     | not null              |
