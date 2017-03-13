@@ -54,10 +54,10 @@
 | id          | integer   | not null, primary key                                |
 | mountain_id | integer   | not null, foreign key (references mountain), indexed |
 | user_id     | integer   | not null, foreign key (references user), indexed     |
-| tag_id      | integer   | foreign key (references tag), indexed                |
 | url         | string    | not null                                             |
+<!-- | tag_id      | integer   | foreign key (references tag), indexed                | -->
 
-## tags
+<!-- ## tags
 
 | column name | data type | details                                              |
 |-------------|-----------|------------------------------------------------------|
@@ -66,4 +66,4 @@
 | user_id     | integer   | not null, foreign key (references user), indexed     |
 | photo_id    | integer   | foreign key (references photo), indexed              |
 | caption     | string    | not null                                             |
-| type        | string    | not null, inclusive [feature, hazard, photo]         |
+| type        | string    | not null, inclusive [feature, hazard, photo]         | -->
