@@ -1,4 +1,4 @@
-# Deeper
+# GoDeeper
 
 [Heroku link][heroku]
 
