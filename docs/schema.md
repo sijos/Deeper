@@ -46,7 +46,6 @@
 | advanced_terrain_rating | integer   | not null, inclusive [1, 2, 3, 4, 5]                   |
 | amenities_rating        | integer   | not null, inclusive [1, 2, 3, 4, 5]                   |
 | services_rating         | integer   | not null, inclusive [1, 2, 3, 4, 5]                   |
-| value_rating            | integer   | not null, inclusive [1, 2, 3, 4, 5]                   |
 
 ## photos
 
