@@ -4,7 +4,7 @@ class Api::UsersController < ApplicationController
 
     if @user.save
       login(@user)
-      render "api/index" #for now, update to show profile page once created
+      render :show #for now, update to show profile page once created
     else
       render json: @user.errors.full_messages, status: 422
     end
@@ -13,7 +13,7 @@ class Api::UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      render "api/index" #for now, update to show profile page once created
+      render :show #for now, update to show profile page once created
     else
       render json: @user.errors.full_messages, status: 422
     end
