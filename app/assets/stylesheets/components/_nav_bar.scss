@@ -4,11 +4,12 @@
 }
 
 .nav-bar {
-  background-color: $light-blue;
+  background-color: transparent;
+  position: fixed;
   width: 85%;
-  display: flex;
   justify-content: space-between;
   height: 36px;
+  font-size: 14px;
 }
 
 .login-signup {
