@@ -1,17 +1,19 @@
 import React from 'react';
+import AuthFormContainer from './auth_form_container';
 
 const loggedOutButtons = () => (
   <ul className="login-signup">
+    <AuthFormContainer />
     <li><button className="header-button">Log In</button></li>
     <li><button className="header-button">Sign Up</button></li>
   </ul>
 );
 
 const greetingLogout = (currentUser, logout) => (
-  <nav className="greeting">
-    <h3>Welcome, {currentUser.username}!</h3>
-    <button className="header-button" onClick={logout}>Log Out</button>
-  </nav>
+  <ul className="login-signup">
+    <li><h4>Welcome, {currentUser.username}!</h4></li>
+    <li><button className="header-button" onClick={logout}>Log Out</button></li>
+  </ul>
 );
 
 const Auth = ({ currentUser, logout }) => (
