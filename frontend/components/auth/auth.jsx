@@ -1,10 +1,10 @@
 import React from 'react';
 
 const loggedOutButtons = () => (
-  <nav className="login-signup">
-    <button className="header-button">Log In</button>
-    <button className="header-button">Sign Up</button>
-  </nav>
+  <ul className="login-signup">
+    <li><button className="header-button">Log In</button></li>
+    <li><button className="header-button">Sign Up</button></li>
+  </ul>
 );
 
 const greetingLogout = (currentUser, logout) => (

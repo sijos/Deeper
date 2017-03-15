@@ -1,18 +1,13 @@
 import React from 'react';
+import AuthContainer from '../auth/auth_container';
 
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-
-  render() {
-    return (
-      <div className="nav-bar">
-        <AuthContainer />
-      </div>
-    );
-  }
-}
+const NavBar = () => (
+  <header className="header">
+    <nav className="nav-bar">
+      <p>Logo Here</p>
+      <AuthContainer />
+    </nav>
+  </header>
+);
 
 export default NavBar;

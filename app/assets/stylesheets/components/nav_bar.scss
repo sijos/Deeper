@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  background-color: #71C9CE;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+}
+
+.login-signup {
+  display: flex;
+}
+
+.login-signup > li {
+  height: 80%;
+  padding: 2px 4px;
+}
+
+.login-signup >li:last-of-type {
+  padding-right: 0;
+}
+
+.header-button {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0;
+  height: 28px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-button:hover {
+  background-color: gray;
+}
