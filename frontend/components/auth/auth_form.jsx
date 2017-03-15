@@ -18,10 +18,6 @@ class AuthForm extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  // componentDidUpdate() {
-  //   this.setState(defaultState);
-  // }
-
   openModal(modalType) {
     this.setState({modalOpen: true, modalType});
   }
