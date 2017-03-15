@@ -2,11 +2,7 @@ import React from 'react';
 import AuthFormContainer from './auth_form_container';
 
 const loggedOutButtons = () => (
-  <ul className="login-signup">
-    <AuthFormContainer />
-    <li><button className="header-button">Log In</button></li>
-    <li><button className="header-button">Sign Up</button></li>
-  </ul>
+  <AuthFormContainer />
 );
 
 const greetingLogout = (currentUser, logout) => (

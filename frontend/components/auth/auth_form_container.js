@@ -4,8 +4,6 @@ import AuthForm from './auth_form';
 
 const mapStateToProps = ({ session }, ownProps) => ({
   errors: session.errors,
-  // likely will not need this anymore
-  formType: ownProps.formType === 'signup' ? "Sign up" : "Log in"
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
