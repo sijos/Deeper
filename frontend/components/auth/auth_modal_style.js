@@ -8,13 +8,15 @@ const ModalStyle = {
     backgroundColor   : 'rgba(255, 255, 255, 0.75)'
   },
   content : {
-    top                   : '50%',
-    left                  : '50%',
+    top                   : '25%',
+    left                  : '80%',
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : 'auto',
     transform             : 'translate(-50%, -50%)',
-    borderRadius          : '20px'
+    borderRadius          : '20px',
+    width                 : '270px',
+    height                : '160px',
   }
 };
 

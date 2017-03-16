@@ -12,8 +12,9 @@
   font-size: 14px;
 }
 
-.login-signup {
+.login-signup, .greeting {
   display: flex;
+  align-items: center;
 }
 
 .login-signup > li {
@@ -21,13 +22,11 @@
   padding: 2px 4px;
 }
 
-.login-signup >li:last-of-type {
+.login-signup > li:last-of-type {
   padding-right: 0;
 }
 
 .header-button {
-  border: 1px solid grey;
-  border-radius: 5px;
   padding: 0;
   height: 28px;
   width: 75px;

@@ -19,7 +19,7 @@ class AuthForm extends React.Component {
   }
 
   openModal(modalType) {
-    this.setState({modalOpen: true, modalType});
+    this.setState({username: "", password: "", modalOpen: true, modalType});
   }
 
   closeModal() {
@@ -29,10 +29,10 @@ class AuthForm extends React.Component {
   swapForm() {
     if (this.state.modalType === "login") {
       return (<button onClick={this.openModal.bind(this, "signup")}
-        >Sign Up Here!</button>);
+        className="swap-button">sign up here!</button>);
     } else {
       return (<button onClick={this.openModal.bind(this, "login")}
-        >Log In Here!</button>);
+        className="swap-button">log in here!</button>);
     }
   }
 
@@ -63,7 +63,8 @@ class AuthForm extends React.Component {
   }
 
   render() {
-    const formText = this.state.modalType === "login" ? "Log In" : "Sign Up";
+    const submitText = this.state.modalType === "login" ? "Log In" : "Sign Up";
+    const formText = submitText.toLowerCase();
     return(
       <div>
         <ul className="login-signup">
@@ -84,16 +85,16 @@ class AuthForm extends React.Component {
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
           style={ModalStyle}>
-          <h2> Welcome!</h2>
-          <div>Please {formText} below or {this.swapForm()}</div>
-          <form onSubmit={this.handleSubmit}>
-            {this.renderErrors}
-            <div className="login-form">
+          <nav className="modal-content">
+            <h2> Welcome!</h2>
+            <div>Please {formText} below or {this.swapForm()}</div>
+            <form onSubmit={this.handleSubmit} className="login-form">
+              {this.renderErrors}
               <label>Username:
                 <input type="text"
                   value={this.state.username}
                   onChange={this.update("username")}
-                  className="login-field">
+                  className="text-input">
                 </input>
               </label>
               <br />
@@ -101,13 +102,13 @@ class AuthForm extends React.Component {
                 <input type="password"
                   value={this.state.password}
                   onChange={this.update("password")}
-                  className="login-field">
+                  className="text-input">
                 </input>
               </label>
               <br />
-              <input type="submit" value={formText}></input>
-            </div>
-          </form>
+              <input type="submit" value={submitText}></input>
+            </form>
+          </nav>
         </Modal>
       </div>
     );

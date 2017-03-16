@@ -7,7 +7,7 @@ const loggedOutButtons = () => (
 
 const greetingLogout = (currentUser, logout) => (
   <ul className="login-signup">
-    <li><h4>Welcome, {currentUser.username}!</h4></li>
+    <li className="greeting">Welcome, {currentUser.username}!</li>
     <li><button className="header-button" onClick={logout}>Log Out</button></li>
   </ul>
 );
