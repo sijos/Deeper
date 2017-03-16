@@ -3,4 +3,9 @@ class Api::ResortsController < ApplicationController
     @resorts = Resort.all
     render :index
   end
+
+  def show
+    @resort = Resort.find(params[:id])
+    render :show
+  end
 end
