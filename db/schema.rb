@@ -10,30 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170316000257) do
+ActiveRecord::Schema.define(version: 20170316024256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "resorts", force: :cascade do |t|
-    t.string   "name",           null: false
-    t.string   "address",        null: false
-    t.string   "zip",            null: false
-    t.string   "city",           null: false
-    t.string   "state_province", null: false
-    t.string   "country",        null: false
-    t.integer  "vertical_drop",  null: false
-    t.integer  "peak_elevation", null: false
-    t.float    "avg_snowfall",   null: false
-    t.integer  "num_trails",     null: false
-    t.integer  "num_lifts",      null: false
-    t.integer  "price_rating",   null: false
-    t.string   "website_url",    null: false
-    t.string   "trail_map_url",  null: false
-    t.float    "lat",            null: false
-    t.float    "lng",            null: false
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.string   "name",                         null: false
+    t.string   "address",                      null: false
+    t.string   "zip",                          null: false
+    t.string   "city",                         null: false
+    t.string   "state_province",               null: false
+    t.string   "country",                      null: false
+    t.integer  "vertical_drop",                null: false
+    t.integer  "peak_elevation",               null: false
+    t.float    "avg_snowfall",                 null: false
+    t.integer  "num_trails",                   null: false
+    t.integer  "num_lifts",                    null: false
+    t.integer  "price_rating",                 null: false
+    t.string   "website_url",                  null: false
+    t.string   "trail_map_url",                null: false
+    t.float    "lat",                          null: false
+    t.float    "lng",                          null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "profile_pic_url", default: ""
   end
 
   create_table "users", force: :cascade do |t|
