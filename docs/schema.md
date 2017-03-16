@@ -18,15 +18,15 @@
 | name             | string    | not null              |
 | address          | string    | not null              |
 | city             | string    | not null              |
-| state/province   | string    |                       |
+| state_province   | string    | not null              |
 | country          | string    | not null              |
 | skiable_acres    | integer   | not null              |
 | vertical_drop    | integer   | not null              |
-| summit_elevation | integer   | not null              |
+| peak_elevation   | integer   | not null              |
 | avg_snowfall     | float     | not null              |
 | num_trails       | integer   | not null              |
 | num_lifts        | integer   | not null              |
-| avg_price        | string    | not null              |
+| price_rating     | string    | not null              |
 | website_url      | string    | not null              |
 | profile_pic_url  | string    | not null              |
 | trail_map_url    | string    | not null              |
