@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchResorts } from './util/resorts_api_util.js';
+import { fetchResorts } from './actions/resort_actions'; //for testing
+import { selectHomeResorts } from './reducers/selectors'; //for testing
 import Modal from 'react-modal';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,3 +21,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.fetchResorts = fetchResorts; //for testing, remove later
+window.selectHomeResorts = selectHomeResorts; // for testing
