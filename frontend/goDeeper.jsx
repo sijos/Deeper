@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
-import { login } from './actions/session_actions';
+import { fetchResorts } from './util/resorts_api_util.js';
 import Modal from 'react-modal';
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
   if (window.currentUser) {
-    const preloadedState = { session: {currentUser: window.currentUser, errors: []} };
-    //TODO remove errors from preloaded state after forms are setup
+    const preloadedState = { session: {currentUser: window.currentUser} };
     store = configureStore(preloadedState);
   } else {
     store = configureStore();
@@ -20,4 +19,4 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store} />, root);
 });
 
-window.login = login; //for testing, remove later
+window.fetchResorts = fetchResorts; //for testing, remove later
