@@ -1,5 +1,5 @@
 {
-  "name": "GoDeeper",
+  "name": "Steeper",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sijos/GoDeeper.git"
+    "url": "git+https://github.com/sijos/Steeper.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sijos/GoDeeper/issues"
+    "url": "https://github.com/sijos/Steeper/issues"
   },
-  "homepage": "https://github.com/sijos/GoDeeper#readme",
+  "homepage": "https://github.com/sijos/Steeper#readme",
   "dependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
