@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170316031535) do
+ActiveRecord::Schema.define(version: 20170317184509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "photos", force: :cascade do |t|
+    t.integer  "resort_id",  null: false
+    t.integer  "user_id",    null: false
+    t.string   "url",        null: false
+    t.string   "caption"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["resort_id"], name: "index_photos_on_resort_id", using: :btree
+    t.index ["user_id"], name: "index_photos_on_user_id", using: :btree
+  end
 
   create_table "resorts", force: :cascade do |t|
     t.string   "name",                         null: false
@@ -36,6 +47,22 @@ ActiveRecord::Schema.define(version: 20170316031535) do
     t.datetime "updated_at",                   null: false
     t.string   "profile_pic_url", default: ""
     t.integer  "skiable_acres",                null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "resort_id",        null: false
+    t.integer  "user_id",          null: false
+    t.text     "body",             null: false
+    t.integer  "overall_rating",   null: false
+    t.integer  "basic_t_rating",   null: false
+    t.integer  "adv_t_rating",     null: false
+    t.integer  "amenities_rating", null: false
+    t.integer  "services_rating",  null: false
+    t.integer  "value_rating",     null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["resort_id"], name: "index_reviews_on_resort_id", using: :btree
+    t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
