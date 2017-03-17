@@ -1,28 +1,25 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
+import Slider from 'react-slick';
 
-// import 'style!css!react-responsive-carousel/lib/styles/main.css';
-// import 'style!css!react-responsive-carousel/lib/styles/carousel.css';
+const ResortPhotoCarousel = () => {
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll:1,
+    arrows: true,
+    variableWidth: true,
+  };
 
-const ResortPhotoCarousel = () => (
-  <Carousel showArrows={true}>
-    <div>
-       <img src="http://lorempixel.com/900/500/sports/1/" />
-       <p className="legend">Legend 1</p>
-   </div>
-   <div>
-       <img src="http://lorempixel.com/900/500/sports/2/" />
-       <p className="legend">Legend 2</p>
-   </div>
-   <div>
-       <img src="http://lorempixel.com/900/500/sports/3/" />
-       <p className="legend">Legend 3</p>
-   </div>
-   <div>
-       <img src="http://lorempixel.com/900/500/sports/4/" />
-       <p className="legend">Legend 4</p>
-   </div>
- </Carousel>
-);
-
+  return (
+      <Slider {...settings}>
+        <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489708055/resort%20pics/vail-profile.jpg"></img></div>
+        <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg"></img></div>
+        <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg"></img></div>
+        <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg"></img></div>
+        <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg"></img></div>
+      </Slider>
+  );
+};
 export default ResortPhotoCarousel;

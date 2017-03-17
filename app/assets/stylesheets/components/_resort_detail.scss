@@ -97,3 +97,21 @@
 //   -ms-transform: translate(-50%, -50%);
 //   transform: translate(-50%, -50%);
 // }
+
+.photo-carousel {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  padding-left: 50px;
+}
+
+
+.slider-img {
+  width: auto;
+  height: 190px;
+  padding-right: 15px;
+}
+
+.slick-slider button {
+  background-color: $midnight;
+}

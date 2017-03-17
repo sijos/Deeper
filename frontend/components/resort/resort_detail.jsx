@@ -60,7 +60,9 @@ class ResortDetail extends React.Component {
                 <img className="trail-map" src={resort.trail_map_url} />
               </div>
             </div>
-            <ResortPhotoCarousel />
+            <div className="photo-carousel">
+              <ResortPhotoCarousel />
+            </div>
           </div>
         </div>
       </div>
