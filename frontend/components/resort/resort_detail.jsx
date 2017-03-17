@@ -53,6 +53,11 @@ class ResortDetail extends React.Component {
               </button></li>
             </ul>
           </div>
+          <div className="resort-photo-container">
+            <div className="trail-map-container">
+
+            </div>
+          </div>
         </div>
       </div>
     );

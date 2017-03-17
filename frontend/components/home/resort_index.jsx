@@ -11,7 +11,7 @@ class ResortIndex extends React.Component {
 
   render() {
     return (
-      <ul>
+      <ul className="resort-index">
         {this.props.resorts.map(resort => (
           <li key={resort.id}>{resort.name}</li>
         ))}
