@@ -1,4 +1,5 @@
 import React from 'react';
+import ResortPhotoCarousel from './resort_photo_carousel';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class ResortDetail extends React.Component {
                 <img className="trail-map" src={resort.trail_map_url} />
               </div>
             </div>
+            <ResortPhotoCarousel />
           </div>
         </div>
       </div>

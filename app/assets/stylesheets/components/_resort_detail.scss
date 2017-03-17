@@ -72,6 +72,10 @@
   padding-right: 5px;
 }
 
+.resort-photos-container {
+  justify-content: space-between;
+}
+
 .trail-map-container {
   border: 1px solid #CCCCCC;
 }
@@ -82,7 +86,7 @@
   height: 200px;
   overflow: hidden;
 }
-// 
+//
 // .thumbnail img {
 //   position: absolute;
 //   left: 50%;
