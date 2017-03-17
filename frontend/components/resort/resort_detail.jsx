@@ -53,9 +53,11 @@ class ResortDetail extends React.Component {
               </button></li>
             </ul>
           </div>
-          <div className="resort-photo-container">
+          <div className="resort-photos-container">
             <div className="trail-map-container">
-
+              <div className="thumbnail">
+                <img className="trail-map" src={resort.trail_map_url} />
+              </div>
             </div>
           </div>
         </div>
