@@ -8,7 +8,7 @@ const Home = () => (
         <source src="http://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4" type="video/mp4"/>
       </video>
       <nav className="landing">
-        <h1 className="title">Steeper</h1>
+        <h1 className="title">Snowscape</h1>
         <h4 className="tagline">Your guide to the world's greatest mountains</h4>
       </nav>
     </div>
