@@ -20,3 +20,29 @@
   font-weight: bolder;
   text-shadow: 1px 1px 1px white;
 }
+
+.index-container {
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resort-index {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resort-item {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.resort-photo {
+  max-width: 100px;
+  max-height: 100px;
+}
