@@ -1,0 +1,68 @@
+.detail-page {
+  width: 80%;
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+}
+
+.resort-detail {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  min-width: 200px;
+  min-height: 200px;
+  margin-top: 5px;
+}
+
+.resort-detail * {
+  display: flex;
+}
+
+.resort-details {
+  flex-direction: column;
+}
+
+.detail-header {
+  justify-content: space-between;
+  width: 100%;
+  height: 33%;
+}
+
+.review-stars {
+  height: 24px;
+  width: 200px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.review-stars li {
+  margin-right: 10px;
+}
+
+.location {
+  justify-content: space-between;
+}
+
+.location li {
+  font-size: 17px;
+}
+
+.review-buttons {
+  align-items: center;
+}
+
+.review-buttons li {
+  margin-left: 8px;
+}
+
+.review-buttons > li > button {
+  padding: 6px;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-around;
+}
+
+[class*='fa-'] {
+  padding-right: 5px;
+}

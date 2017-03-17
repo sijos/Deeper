@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   justify-content: center;
 }
@@ -6,7 +6,7 @@
 .nav-bar {
   background-color: transparent;
   position: fixed;
-  width: 85%;
+  width: 80%;
   justify-content: space-between;
   height: 36px;
   font-size: 14px;
@@ -36,4 +36,18 @@
 
 .header-button:hover {
   background-color: gray;
+}
+
+.search-nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0, auto;
+  height: 50px;
+  z-index: 100;
+}
+
+.search-header {
+  background: $core-blue;
+  box-shadow: 0 2px 5px rgba(0,0,0,.4);
 }

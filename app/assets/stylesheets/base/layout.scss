@@ -18,8 +18,8 @@ button {
 
 button:hover {
 	background-color: grey;
-	border-color: $core-blue;
-	opacity: 1;
+	border-color: $midnight;
+	opacity: 0.85;
 	transition: background-color 0.25s, border 0.5s, ease-in-out;
 }
 
@@ -30,6 +30,13 @@ button:hover {
 
 .hidden {
 	display: none;
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 nav {

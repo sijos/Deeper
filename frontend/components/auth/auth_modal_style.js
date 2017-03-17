@@ -17,6 +17,7 @@ const ModalStyle = {
     borderRadius          : '20px',
     width                 : '270px',
     height                : '160px',
+    overflow              : 'hidden'
   }
 };
 

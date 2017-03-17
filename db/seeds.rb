@@ -21,10 +21,10 @@
 #   num_lifts: 31,
 #   price_rating: 4,
 #   website_url:'http://www.vail.com/',
-#   trail_map_url: 'http://www.vail.com/~/media/vail/files/fy17/trail%20maps/vail-maps16-winter-frontside.ashx',
+#   trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708199/resort%20pics/vail-map.pdf',
 #   lat: 39.606138,
 #   lng: -106.354973,
-#   profile_pic_url: 'https://static.pixlee.com/photos/52999069/xl/2c92a154a4f5c06b13d2.jpg'
+#   profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708055/resort%20pics/vail-profile.jpg'
 #   })
 #
 # Resort.create({
@@ -42,10 +42,10 @@
 #   num_lifts: 28,
 #   price_rating: 4,
 #   website_url: 'http://www.skiheavenly.com/',
-#   trail_map_url: 'http://www.skiheavenly.com/~/media/heavenly/images/trail%20map%20images/2016/hvy_trailmap_2016_thumb.ashx?la=en&h=837&w=700',
+#   trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708288/resort%20pics/heavenly-map.jpg',
 #   lat: 38.956829,
 #   lng: -119.942632,
-#   profile_pic_url: 'https://files.graphiq.com/1/media/images/t2/Heavenly_Ski_Resort_466192_i0.jpg'
+#   profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708465/resort%20pics/heavenly-profile.jpg'
 # })
 
 Resort.create({
@@ -63,10 +63,10 @@ Resort.create({
   num_lifts: 37,
   price_rating: 3,
   website_url: 'https://www.whistlerblackcomb.com/',
-  trail_map_url: 'https://www.whistlerblackcomb.com/~/media/E93BBF086B1743CAA7DB043741F12BC6.ashx',
+  trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708572/resort%20pics/whistler-map.pdf',
   lat: 50.114964,
   lng: -122.948647,
-  profile_pic_url: 'https://files.graphiq.com/1/media/images/t2/Whistler__Blackcomb_Ski_Resort_481689_i0.jpg',
+  profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708609/resort%20pics/whistler-profile.jpg',
 })
 
 # Resort.create({
