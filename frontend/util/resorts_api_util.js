@@ -11,12 +11,3 @@ export const fetchResort = (id) => {
     url: `api/resorts/${id}`
   });
 };
-
-//
-// export const postReview = (review) => {
-//   return $.ajax({
-//     method: "POST",
-//     url: "api/reviews",
-//     data: { review }
-//   });
-// };
