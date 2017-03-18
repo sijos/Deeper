@@ -8,9 +8,7 @@ const App = ({ children, location}) => {
   return (
     <div>
       <NavBar navType={navType} />
-      <div className="main-content">
-        { children }
-      </div>
+      { children }
     </div>
   );
 };

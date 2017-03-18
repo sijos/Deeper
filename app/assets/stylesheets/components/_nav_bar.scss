@@ -19,7 +19,7 @@ header {
 
 .login-signup > li {
   height: 80%;
-  padding: 2px 4px;
+  padding: 6px 9px;
 }
 
 .login-signup > li:last-of-type {
@@ -28,14 +28,13 @@ header {
 
 .header-button {
   padding: 0;
-  height: 28px;
-  width: 75px;
+  height: 35px;
+  width: 100px;
   display: flex;
   justify-content: center;
-}
-
-.header-button:hover {
-  background-color: gray;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 19px;
 }
 
 .search-nav-bar {
