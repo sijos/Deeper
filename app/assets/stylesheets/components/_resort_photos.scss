@@ -1,0 +1,43 @@
+.resort-photos-container {
+  justify-content: space-between;
+}
+
+.trail-map-container {
+  border: 1px solid #CCCCCC;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+//
+// .thumbnail img {
+//   position: absolute;
+//   left: 50%;
+//   right: 50%;
+//   height: 100%;
+//   width: auto;
+//   -webkit-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+// }
+
+.photo-carousel {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  padding-left: 50px;
+}
+
+
+.slider-img {
+  width: auto;
+  height: 190px;
+  padding-right: 15px;
+}
+
+.slick-slider button {
+  background-color: $midnight;
+}
