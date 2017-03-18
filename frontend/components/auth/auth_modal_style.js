@@ -8,16 +8,21 @@ const ModalStyle = {
     backgroundColor   : 'rgba(255, 255, 255, 0.75)'
   },
   content : {
-    top                   : '25%',
-    left                  : '80%',
+    top                   : '50%',
+    left                  : '50%',
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : 'auto',
     transform             : 'translate(-50%, -50%)',
     borderRadius          : '20px',
-    width                 : '270px',
-    height                : '160px',
-    overflow              : 'hidden'
+    width                 : '36vw',
+    height                : '46vh',
+    overflow              : 'hidden',
+    display               : 'flex',
+    alignItems            : 'center',
+    justifyContent        : 'center',
+    maxWidth              : '400px',
+    maxHeight             : '410px',
   }
 };
 

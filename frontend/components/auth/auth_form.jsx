@@ -86,25 +86,25 @@ class AuthForm extends React.Component {
           onRequestClose={this.closeModal}
           style={ModalStyle}>
           <nav className="modal-content">
-            <h2> Welcome!</h2>
-            <div>Please {formText} below or {this.swapForm()}</div>
+            <div>
+              <h2 className="welcome"> Welcome to Snowscape!</h2>
+              <div>Please {formText} below or {this.swapForm()}</div>
+            </div>
             <form onSubmit={this.handleSubmit} className="login-form">
               {this.renderErrors}
-              <label>Username:
-                <input type="text"
-                  value={this.state.username}
-                  onChange={this.update("username")}
-                  className="text-input">
-                </input>
-              </label>
+              <input type="text"
+                value={this.state.username}
+                onChange={this.update("username")}
+                className="text-input"
+                placeholder=" Enter Username">
+              </input>
               <br />
-              <label>Password:
-                <input type="password"
-                  value={this.state.password}
-                  onChange={this.update("password")}
-                  className="text-input">
+              <input type="password"
+                value={this.state.password}
+                onChange={this.update("password")}
+                className="text-input"
+                placeholder=" Enter Password">
                 </input>
-              </label>
               <br />
               <input type="submit" value={submitText}></input>
             </form>
