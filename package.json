@@ -1,5 +1,5 @@
 {
-  "name": "Steeper",
+  "name": "Snowscape",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sijos/Steeper.git"
+    "url": "git+https://github.com/sijos/Snowscape.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sijos/Steeper/issues"
+    "url": "https://github.com/sijos/Snowscape/issues"
   },
-  "homepage": "https://github.com/sijos/Steeper#readme",
+  "homepage": "https://github.com/sijos/Snowscape#readme",
   "dependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
