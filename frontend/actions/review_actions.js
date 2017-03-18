@@ -33,8 +33,8 @@ export const updateReview = (review) => (dispatch) => {
   );
 };
 
-export const deleteReview = (review) => (dispatch) => {
-  ReviewAPI.deleteReview(review).then(
+export const deleteReview = (id) => (dispatch) => {
+  ReviewAPI.deleteReview(id).then(
     (review) => dispatch(removeReview(review)),
     (error) => dispatch(receiveErrors(error.responseJSON))
   );
