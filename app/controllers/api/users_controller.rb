@@ -12,7 +12,7 @@ class Api::UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    if @user.update(user_params)
+    if @user.update_attributes(user_params)
       render :show #for now, update to show profile page once created
     else
       render json: @user.errors.full_messages, status: 422
