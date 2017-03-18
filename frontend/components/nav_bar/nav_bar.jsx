@@ -15,7 +15,7 @@ const NavBar = ({ navType }) => {
   return (
     <header className={headerClass}>
       <nav className={navClass}>
-        <p>Logo Here</p>
+        <img className="logo" src='assets/Logo.png'></img>
         {searchBar}
         <AuthContainer />
       </nav>
