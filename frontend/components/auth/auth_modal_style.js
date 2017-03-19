@@ -23,6 +23,7 @@ const ModalStyle = {
     justifyContent        : 'center',
     maxWidth              : '400px',
     maxHeight             : '410px',
+    minHeight             : '330px',
   }
 };
 
