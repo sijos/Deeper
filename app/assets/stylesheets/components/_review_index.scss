@@ -1,0 +1,48 @@
+.review-index div, nav, section {
+  border: 1px solid blue;
+}
+
+.review {
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-pic {
+  justify-content: center;
+  align-items: center;
+}
+
+.name-pic h5 {
+  font-size: 14px;
+  margin: 12px;
+}
+
+.name-pic img {
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 3px;
+}
+
+.review-bars {
+  justify-content: space-around;
+}
+
+.overall-rating {
+  height: 20%;
+}
+
+.other-ratings nav {
+  margin-bottom: 2px;
+}
+
+.date-body > div {
+  margin: 14px 0;
+  font-size: 15px;
+  font-weight: bolder;
+}

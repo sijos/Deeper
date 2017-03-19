@@ -1,5 +1,6 @@
 import React from 'react';
 import ResortPhotoCarousel from './resort_photo_carousel';
+import ReviewIndexItem from '../reviews/review_index_item';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -64,6 +65,9 @@ class ResortDetail extends React.Component {
               <ResortPhotoCarousel />
             </div>
           </div>
+        </div>
+        <div className="review-index">
+          <ReviewIndexItem />
         </div>
       </div>
     );

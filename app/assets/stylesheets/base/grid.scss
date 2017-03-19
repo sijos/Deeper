@@ -25,6 +25,10 @@ with a class attribute containing 'col-' */
   width: 33.3333%;
 }
 
+.col-1-6 {
+  width: 16.66667%
+}
+
 // to add responsiveness media settings here later
 // @media all and (max-width: 1000px) {
 //   [class*='col-'] {
