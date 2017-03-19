@@ -87,7 +87,7 @@ class AuthForm extends React.Component {
           onRequestClose={this.closeModal}
           style={ModalStyle}>
           <nav className="modal-content">
-            <div>
+            <div className="welcome">
               <h2 className="welcome"> Welcome to Snowscape!</h2>
               <div>Please {formText} below or {this.swapForm()}</div>
             </div>

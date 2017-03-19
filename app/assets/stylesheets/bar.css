@@ -1,0 +1,13 @@
+.bar-label {
+  font: 10px, $sans-serif;
+  font-weight: normal;
+}
+
+.bar-contain {
+  width: 90%;
+  height: auto;
+}
+
+.bar-expand {
+  color: $light-blue;
+}
