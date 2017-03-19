@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create([
-  { username: 'scott', password: 'password' },
+  { username: 'scott', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" },
   { username: 'zestyyy', password: 'password' },
   { username: 'rage', password: 'password' },
   { username: 'ridelyfe', password: 'password' },
@@ -196,8 +196,6 @@ Resort.create([
   }
 ])
 
-
-
 # {
 #   name:
 #   address:
@@ -218,3 +216,62 @@ Resort.create([
 #   lng:
 #   profile_pic_url:
 # }
+
+Review.create([
+  {
+    resort_id: 7,
+    user_id: 2,
+    body: "A technical mountain with diverse terrain. Powder days should be spent in Mineral Basin and exploring tree runs. Pro tip: Get to the mountain really, really early when it snows or be caught in canyon traffic.",
+    overall_rating: 4,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 3,
+    services_rating: 5 ,
+    value_rating: 3
+  },
+  {
+    resort_id: 2,
+    user_id: 1,
+    body: "Best views in Lake Tahoe! There is some insane backcountry on the Nevada side down to the gondola, but make sure there's enough snow and good luck finding the exit or you could be walking...",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 4,
+    amenities_rating: 3,
+    services_rating: 4,
+    value_rating: 2
+  },
+  {
+    resort_id: 2,
+    user_id: 4,
+    body: "Big, lots of terrain, lots of fun with fresh snow. Gets a bit packed with tourists and gapers in peak season, go on weekdays if possible",
+    overall_rating: 3,
+    basic_t_rating: 5,
+    adv_t_rating: 3,
+    amenities_rating: 2,
+    services_rating: 1,
+    value_rating: 1
+  },
+  {
+    resort_id: 2,
+    user_id: 3,
+    body: "Choice views, rage approved.",
+    overall_rating: 5,
+    basic_t_rating: 3,
+    adv_t_rating: 5,
+    amenities_rating: 5,
+    services_rating: 4,
+    value_rating: 3
+  }
+  ])
+
+  # {
+  #   resort_id:
+  #   user_id:
+  #   body:
+  #   overall_rating:
+  #   basic_t_rating:
+  #   adv_t_rating:
+  #   amenities_rating:
+  #   services_rating:
+  #   value_rating:
+  # }
