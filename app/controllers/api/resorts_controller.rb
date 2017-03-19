@@ -6,6 +6,7 @@ class Api::ResortsController < ApplicationController
 
   def show
     @resort = Resort.find(params[:id])
+    @avg_rating = @resort.avg_rating
     render :show
   end
 end

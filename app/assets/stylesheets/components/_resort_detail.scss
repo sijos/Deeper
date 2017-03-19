@@ -38,6 +38,14 @@
   height: 33%;
 }
 
+.review-row {
+  align-items: center;
+}
+
+.review-row > div {
+  font-size: 14px;
+}
+
 .review-stars {
   height: 24px;
   width: 200px;

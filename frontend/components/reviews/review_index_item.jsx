@@ -1,27 +1,27 @@
 import React from 'react';
 
-const ReviewIndexItem = () => {
+const ReviewIndexItem = ({review}) => {
   return (
-    <div className="review">
+    <li className="review">
       <section className="name-pic col-1-6">
-        <nav><h5>Reviewer Name</h5></nav>
-        <img src="http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg"></img>
+        <nav><h5>{review.reviewer.username}</h5></nav>
+        <img src={review.reviewer.profile_pic_url}></img>
       </section>
       <section className="review-bars col-1-3">
-        <div className="overall-rating">Overall Stars</div>
+        <div className="overall-rating">{review.overall_rating}</div>
         <div className="other-ratings">
-          <nav>Subrating 1</nav>
-          <nav>Subrating 2</nav>
-          <nav>Subrating 3</nav>
-          <nav>Subrating 4</nav>
-          <nav>Subrating 5</nav>
+          <nav>{review.basic_t_rating}</nav>
+          <nav>{review.adv_t_rating}</nav>
+          <nav>{review.amenities_rating}</nav>
+          <nav>{review.services_rating}</nav>
+          <nav>{review.value_rating}</nav>
         </div>
       </section>
       <section className="date-body col-1-2">
-        <h3>Posting date</h3>
-        <p>Review body</p>
+        <h3>{review.date_posted}</h3>
+        <p>{review.body}</p>
       </section>
-    </div>
+    </li>
   );
 };
 
