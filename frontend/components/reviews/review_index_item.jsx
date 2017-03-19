@@ -2,13 +2,14 @@ import React from 'react';
 import Bars from 'react-bars';
 
 const ReviewIndexItem = ({review}) => {
-  const barData = [
-    {label: 'Basic Terrain', value: review.basic_t_rating},
-    {label: 'Advanced Terrain', value: review.adv_t_rating},
-    {label: 'Apres Ski / Amenities', value: review.amenities_rating},
-    {label: 'Experience / Customer Service', value: review.services_rating},
-    {label: 'Value', value: review.value}
-  ];
+
+  const ratingBar = (score, title) => (
+    <li className="rating-bar">
+      <div className={`bar-${score}-5`}>
+        <div className="rating-name">{title}</div>
+      </div>
+    </li>
+  );
 
   return (
     <li className="review">
@@ -18,11 +19,13 @@ const ReviewIndexItem = ({review}) => {
       </section>
       <section className="review-bars col-1-3">
         <div className="overall-rating">{review.overall_rating}</div>
-        <div className="other-ratings">
-          <div className="outer">
-            <div className="inner"></div>
-          </div>
-        </div>
+        <ul className="other-ratings">
+          {ratingBar(review.basic_t_rating, "Basic Terrain")}
+          {ratingBar(review.adv_t_rating, "Advanced Terrain")}
+          {ratingBar(review.amenities_rating, "Après Ski / Amenities")}
+          {ratingBar(review.services_rating, "Experince / Customer Service")}
+          {ratingBar(review.value_rating, "Value")}
+        </ul>
       </section>
       <section className="date-body col-1-2">
         <h3>{review.date_posted}</h3>
@@ -33,4 +36,3 @@ const ReviewIndexItem = ({review}) => {
 };
 
 export default ReviewIndexItem;
-// <Bars data={barData} />

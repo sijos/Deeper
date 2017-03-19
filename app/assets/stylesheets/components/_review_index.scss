@@ -43,16 +43,40 @@
   font-weight: bolder;
 }
 
-.bar-label {
-  font: 10px, $sans-serif;
-  font-weight: normal;
+.rating-bar {
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 5px;
 }
 
-.bar-contain {
-  width: 90%;
-  height: auto;
+.rating-name {
+  position: absolute;
+  padding-left: 3px;
 }
 
-.bar-expand {
-  color: $light-blue;
+[class*='bar-'] {
+  height: 15px;
+  background-color: $light-blue;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.bar-1-5 {
+  width: 20%;
+}
+
+.bar-2-5 {
+  width: 40%;
+}
+
+.bar-3-5 {
+  width: 60%;
+}
+
+.bar-4-5 {
+  width: 80%;
+}
+
+.bar-5-5 {
+  width: 100%;
 }
