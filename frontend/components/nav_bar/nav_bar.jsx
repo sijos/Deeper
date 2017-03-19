@@ -12,12 +12,13 @@ const NavBar = ({ navType }) => {
     headerClass = "header";
   }
 
+
   return (
     <header className={headerClass}>
       <nav className={navClass}>
         <img className="logo" src='assets/Logo.png'></img>
         {searchBar}
-        <AuthContainer />
+        <AuthContainer navClass={navClass}/>
       </nav>
     </header>
   );

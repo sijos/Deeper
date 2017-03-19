@@ -65,16 +65,17 @@ class AuthForm extends React.Component {
   render() {
     const submitText = this.state.modalType === "login" ? "Log In" : "Sign Up";
     const formText = submitText.toLowerCase();
+    const buttonStyle = this.props.buttonStyle;
     return(
       <div>
         <ul className="login-signup">
           <li>
-            <button className="header-button"
+            <button className={buttonStyle}
               onClick={this.openModal.bind(this, 'login')}
               >Log In</button>
           </li>
           <li>
-            <button className="header-button"
+            <button className={buttonStyle}
               onClick={this.openModal.bind(this, 'signup')}
               >Sign Up</button>
           </li>
@@ -90,8 +91,8 @@ class AuthForm extends React.Component {
               <h2 className="welcome"> Welcome to Snowscape!</h2>
               <div>Please {formText} below or {this.swapForm()}</div>
             </div>
+            {this.renderErrors()}
             <form onSubmit={this.handleSubmit} className="login-form">
-              {this.renderErrors}
               <input type="text"
                 value={this.state.username}
                 onChange={this.update("username")}
