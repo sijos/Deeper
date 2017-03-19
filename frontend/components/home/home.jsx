@@ -3,7 +3,7 @@ import ResortIndexContainer from './resort_index_container';
 
 const Home = () => (
   <div className="main-content">
-    <section>
+    <section className="video-holder">
       <video loop muted autoPlay className="fullscreen-bg__video">
         <source src="http://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4" type="video/mp4"/>
       </video>

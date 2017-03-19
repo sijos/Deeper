@@ -5,8 +5,11 @@
 	flex-direction: column;
 }
 
-.main-content > section {
-  height: 718px;
+.video-holder {
+	position: relative;
+	width: 100vw;
+  height: 56.25vw;
+	z-index: -100;
 }
 
 .title-holder {
