@@ -43,6 +43,11 @@ header {
   font-size: 19px;
 }
 
+.sm-header-button {
+  width: 60px;
+  color: white;
+}
+
 .search-nav-bar {
   justify-content: space-between;
   align-items: center;
@@ -53,6 +58,6 @@ header {
 }
 
 .search-header {
-  background: $sky-blue;
+  background: black;
   box-shadow: 0 2px 5px rgba(0,0,0,.4);
 }
