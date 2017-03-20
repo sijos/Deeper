@@ -15,11 +15,11 @@ class NavBar extends React.Component {
       navClass = "search-nav-bar";
       headerClass = "search-header";
       searchBar = <SearchBar />;
-      logo = <img className="logo" src='assets/Logo-white.png' />;
+      logo = <img className="logo" src='http://res.cloudinary.com/dagjelvab/image/upload/v1490030110/logo-white.png' />;
     } else {
       navClass = "nav-bar";
       headerClass = "header";
-      logo = <img className="logo" src='assets/Logo.png' />;
+      logo = <img className="logo" src='http://res.cloudinary.com/dagjelvab/image/upload/v1490030069/logo.png' />;
     }
 
     return (
