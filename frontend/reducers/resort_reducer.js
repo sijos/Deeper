@@ -1,7 +1,12 @@
 import { RECEIVE_RESORT } from '../actions/resort_actions';
 import merge from 'lodash/merge';
 
-const ResortReducer = (state = {reviews: []}, action) => {
+const _defaultResort = {
+  reviews: [],
+  errors: []
+};
+
+const ResortReducer = (state = _defaultResort, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_RESORT:
