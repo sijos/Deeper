@@ -5,3 +5,7 @@ export const selectHomeResorts = ({ resorts }) => (
     profile_pic_url: resorts[id].profile_pic_url
   }))
 );
+
+export const selectSearchResorts = ({ resorts }) => (
+  Object.keys(resorts).map(id => resorts[id])
+);

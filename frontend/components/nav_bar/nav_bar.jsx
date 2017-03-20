@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthContainer from '../auth/auth_container';
-import SearchBar from '../search_bar/search_bar';
+import SearchBar from '../search/search_bar';
 import { hashHistory } from 'react-router';
 
 class NavBar extends React.Component {
