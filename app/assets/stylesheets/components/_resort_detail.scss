@@ -50,10 +50,13 @@
   height: 24px;
   width: 200px;
   align-items: center;
-  font-size: 15px;
 }
 
-.review-stars li {
+.review-stars > div > style {
+  display: none;
+}
+
+.review-stars span {
   margin-right: 10px;
 }
 

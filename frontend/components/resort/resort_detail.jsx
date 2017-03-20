@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
 import ReviewIndexItem from '../reviews/review_index_item';
 
@@ -20,13 +21,21 @@ class ResortDetail extends React.Component {
   }
 
   renderStars() {
-    return(
-      <ul className="review-stars">
-        <li><i className="fa fa-star fa-lg" /></li>
-        <li><i className="fa fa-star fa-lg" /></li>
-        <li><i className="fa fa-star fa-lg" /></li>
-        <li><i className="fa fa-star fa-lg" /></li>
-        <li><i className="fa fa-star-half-o fa-lg" /></li>
+    return (
+      <ReactStars edit={false} color1={"lightgray"} color2={"black"}
+        size={22} value={this.props.resort.avg_rating}/>
+    );
+  }
+
+  renderButtons() {
+    return (
+      <ul className="review-buttons">
+        <li><button>
+          <i className="fa fa-star-o"></i>Write a Review
+        </button></li>
+        <li><button>
+          <i className="fa fa-camera"></i>Add Photo
+        </button></li>
       </ul>
     );
   }
@@ -43,7 +52,9 @@ class ResortDetail extends React.Component {
             <div className="resort-details">
               <h1>{resort.name}</h1>
               <div className="review-row">
-                {this.renderStars()}
+                <div className="review-stars">
+                  {this.renderStars()}
+                </div>
                 <div>{resort.num_reviews} Reviews</div>
               </div>
               <ul className="location">
@@ -52,14 +63,7 @@ class ResortDetail extends React.Component {
                 <li>{resort.country}</li>
               </ul>
             </div>
-            <ul className="review-buttons">
-              <li><button>
-                <i className="fa fa-star-o"></i>Write a Review
-              </button></li>
-              <li><button>
-                <i className="fa fa-camera"></i>Add Photo
-              </button></li>
-            </ul>
+            {this.renderButtons()}
           </div>
           <div className="resort-photos-container">
             <div className="trail-map-container">
