@@ -7,8 +7,8 @@ class SearchMap extends React.Component {
 
   componentDidMount() {
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 },
-      zoom: 8
+      center: { lat: 40.1381272, lng: -108.022974 },
+      zoom: 6
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
