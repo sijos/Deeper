@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 
 const SearchResults = () => (
   <section className="search-results-container">
