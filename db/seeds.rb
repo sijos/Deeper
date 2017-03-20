@@ -274,7 +274,7 @@ Resort.create([
     num_lifts: 14,
     price_rating: 2,
     website_url: 'https://www.snowshoemtn.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965830/snowshoe-map.pdf',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965647/snowshoe-profile.jpg',
     lat: 38.410796,
     lng: -79.993603,
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489967041/snowshoe-map.jpg'
