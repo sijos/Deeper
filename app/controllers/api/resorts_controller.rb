@@ -1,6 +1,10 @@
 class Api::ResortsController < ApplicationController
   def index
-    @resorts = Resort.all
+    if params[:most_popular]
+      @resorts = Resort.most_popular(limit)
+    else
+      @resorts = Resort.all
+    end
     render :index
   end
 

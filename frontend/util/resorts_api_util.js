@@ -1,7 +1,8 @@
-export const fetchResorts = () => {
+export const fetchResorts = (limit) => {
   return $.ajax({
     method: "GET",
-    url: "api/resorts"
+    url: "api/resorts",
+    data: { most_popular: limit }
   });
 };
 

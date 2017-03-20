@@ -12,4 +12,8 @@ class Resort < ApplicationRecord
     ratings = self.reviews.map { |review| review.overall_rating }
     ratings.inject { |sum, el| sum + el }.to_f / ratings.length
   end
+
+  def self.most_popular(limit)
+
+  end
 end

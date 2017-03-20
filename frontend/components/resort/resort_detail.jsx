@@ -33,9 +33,10 @@ class ResortDetail extends React.Component {
 
   render() {
     const resort = this.props.resort;
-    if (Object.keys(resort).length === 0) {
-      return <div></div>;
-    } else {
+    // if (Object.keys(resort).length === 0) {
+    //   return <div></div>;
+    // } else {
+    debugger
       return (
         <div className="detail-page">
           <div className="resort-detail">
@@ -73,13 +74,13 @@ class ResortDetail extends React.Component {
             </div>
           </div>
           <ul className="review-index">
-            {resort.reviews.map(review => (
+            {this.props.resort.reviews.map(review => (
               <ReviewIndexItem key={review.id} review={review} />
             ))}
           </ul>
         </div>
       );
-    }
+
   }
 }
 
