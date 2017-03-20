@@ -5,7 +5,7 @@ const ResortReducer = (state = {reviews: []}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_RESORT:
-      return merge({}, state, action.resort);
+      return merge({}, action.resort);
     default:
       return state;
   }

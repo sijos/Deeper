@@ -12,6 +12,10 @@ class ResortDetail extends React.Component {
     this.props.fetchResort(this.props.params.resortId);
   }
 
+  componentDidUpdate() {
+    this.props.fetchResort(this.props.params.resortId);
+  }
+
   mapPriceToSym() {
     let dollars = "";
     for (let i = 0; i < this.props.resort.price_rating; i++) {

@@ -13,7 +13,9 @@ class Resort < ApplicationRecord
     ratings.inject { |sum, el| sum + el }.to_f / ratings.length
   end
 
-  def self.most_popular(limit)
-
+  def self.most_popular
+    Resort.joins(:reviews).group("resorts.id").
+      order("COUNT(reviews.id) DESC").
+      limit(8)
   end
 end
