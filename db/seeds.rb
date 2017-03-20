@@ -311,7 +311,7 @@ Review.create([
     basic_t_rating: 4,
     adv_t_rating: 5,
     amenities_rating: 3,
-    services_rating: 5 ,
+    services_rating: 5,
     value_rating: 3
   },
   {
@@ -346,8 +346,206 @@ Review.create([
     amenities_rating: 5,
     services_rating: 4,
     value_rating: 3
-  }
-  ])
+  },
+  {
+    resort_id: 1,
+    user_id: 4,
+    body: "Love the back bowls, some of the best spots in colorado on deep powder days.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 3
+  },
+  {
+    resort_id: 1,
+    user_id: 5,
+    body: "Great terrain, lots to explore. Everything on the mountain is expensive so pack a lunch or don't forget your wallet. Parking is hard to find if you're driving out for day trip",
+    overall_rating: 3,
+    basic_t_rating: 4,
+    adv_t_rating: 4,
+    amenities_rating: 3,
+    services_rating: 2,
+    value_rating: 1
+  },
+  {
+    resort_id: 1,
+    user_id: 6,
+    body: "Came looking for the K2, heard it was here. Nowhere to be found...",
+    overall_rating: 2,
+    basic_t_rating: 4,
+    adv_t_rating: 3,
+    amenities_rating: 3,
+    services_rating: 1,
+    value_rating: 1
+  },
+  {
+    resort_id: 3,
+    user_id: 3,
+    body: "Big. Huge. Enormous. So much to ride. Village is a party at nights/weekends. Rage approved.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 5,
+    value_rating: 4
+  },
+  {
+    resort_id: 3,
+    user_id: 6,
+    body: "Best resort I've been to, the people working there are so nice and helpful! Lots to explore, not that expensvie compared to US resorts for the amount of terrain.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 3,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 5
+  },
+  {
+    resort_id: 3,
+    user_id: 7,
+    body: "I don't really ski or snowboard but the views in the peak-to-peak gondola are amazing!",
+    overall_rating: 4,
+    basic_t_rating: 1,
+    adv_t_rating: 1,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 4
+  },
+  {
+    resort_id: 4,
+    user_id: 8,
+    body: "Best mountain in Tahoe for snowboarders. Lift farthest to the left has great tree runs, sidecountry, and natural half pipe. They get tons of snow!",
+    overall_rating: 5 ,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 2,
+    services_rating: 4,
+    value_rating: 3
+  },
+  {
+    resort_id: 4,
+    user_id: 9,
+    body: "Love the name. Kirkwoooood. My nephew is named Kirk. Wood is like the trees.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 3,
+    services_rating: 3,
+    value_rating: 4
+  },
+  {
+    resort_id: 5,
+    user_id: 9,
+    body: "My home resort, ride it all the time. Jupiter is fun on powder days, best spot on the mtn. Lower half of front side gets crowded with newbies and ski school so stay away if you can.",
+    overall_rating: 3 ,
+    basic_t_rating: 5,
+    adv_t_rating: 3,
+    amenities_rating: 4,
+    services_rating: 3,
+    value_rating: 2
+  },
+  {
+    resort_id: 5,
+    user_id: 3,
+    body: "I Ride Park City! Rage approved.",
+    overall_rating: 4 ,
+    basic_t_rating: 4,
+    adv_t_rating: 4,
+    amenities_rating: 3,
+    services_rating: 3,
+    value_rating: 4
+  },
+  {
+    resort_id: 6,
+    user_id: 1,
+    body: "My favorite mountain in Utah. Not the biggest, but lots of fresh snow and not as crowded. TONS of tree runs everywhere, lots to explore between the runs. Parking lot is a bit annoying/gets crowded on weekends so try to get out early.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 3,
+    services_rating: 2,
+    value_rating: 5
+  },
+  {
+    resort_id: 6,
+    user_id: 4,
+    body: "Fav place to chill. Western lift has sidecountry where you can find fresh tracks on most days with new snow.",
+    overall_rating: 4,
+    basic_t_rating: 4,
+    adv_t_rating: 4,
+    amenities_rating: 2,
+    services_rating: 3,
+    value_rating: 4
+  },
+  {
+    resort_id: 7,
+    user_id: 5,
+    body: "The bird is the word. Fun stuff to ride but very/popular crowded, esp on weekends.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 3,
+    value_rating: 3
+  },
+  {
+    resort_id: 8,
+    user_id: 6,
+    body: "Best backcountry in the USA, hands down. Technical mountain, not recommended for beginners.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 3
+  },
+  {
+    resort_id: 8,
+    user_id: 7,
+    body: "I just love the ol' western vibe in the town!",
+    overall_rating: 4,
+    basic_t_rating: 3,
+    adv_t_rating: 3,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 5
+  },
+  {
+    resort_id: 10,
+    user_id: 2,
+    body: "Great mountain for beginners to intermediate or people looking for big open runs and small crowds. Very bare bones local resort with few lodges, but they do call it powder mountain for a reason!",
+    overall_rating: 3,
+    basic_t_rating: 3,
+    adv_t_rating: 1,
+    amenities_rating: 1,
+    services_rating: 5,
+    value_rating: 5
+  },
+  {
+    resort_id: 10,
+    user_id: 8,
+    body: "True to name, LOADS of powder. Worth the trip, you'll be the only one on the run.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 2,
+    services_rating: 3,
+    value_rating: 4
+  },
+  {
+    resort_id: 11,
+    user_id: 9,
+    body: "Great mountain, great views, lots of variety in terrain. Expensive but worth it, at least on most days.",
+    overall_rating: 4,
+    basic_t_rating: 4,
+    adv_t_rating: 3,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 2
+  },
+])
 
   # {
   #   resort_id:
