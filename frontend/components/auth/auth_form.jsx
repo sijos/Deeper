@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from 'react-modal';
-import ModalStyle from './auth_modal_style';
 
 const defaultState = {
   username: "",
@@ -85,7 +84,7 @@ class AuthForm extends React.Component {
           contentLabel="Modal"
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
-          style={ModalStyle}>
+          className="modal-form" overlayClassName="modal-form-overlay">
           <nav className="modal-content">
             <div className="welcome">
               <h2 className="welcome"> Welcome to Snowscape!</h2>
