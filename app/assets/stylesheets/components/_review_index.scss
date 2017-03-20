@@ -6,6 +6,8 @@
   height: 160px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding: 13px 0;
 }
 
 .review > section {
@@ -14,7 +16,7 @@
 }
 
 .name-pic {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 

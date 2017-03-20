@@ -1,5 +1,5 @@
 import React from 'react';
-import Bars from 'react-bars';
+import ReactStars from 'react-stars';
 
 const ReviewIndexItem = ({review}) => {
 
@@ -18,7 +18,11 @@ const ReviewIndexItem = ({review}) => {
         <img src={review.reviewer.profile_pic_url}></img>
       </section>
       <section className="review-bars col-1-3">
-        <div className="overall-rating">{review.overall_rating}</div>
+        <div className="overall-rating">
+          Overall Rating:
+          <ReactStars color2={"#5CCCF0"} size={22} edit={false}
+            value={review.overall_rating}/>
+        </div>
         <ul className="other-ratings">
           {ratingBar(review.basic_t_rating, "Basic Terrain")}
           {ratingBar(review.adv_t_rating, "Advanced Terrain")}
