@@ -9,7 +9,7 @@ class Resort < ApplicationRecord
   has_many :photos
 
   def avg_rating
-    ratings = self.reviews.map { |review| review.overall_rating }
+    ratings = self.reviews.map(&:overall_rating)
     ratings.inject { |sum, el| sum + el }.to_f / ratings.length
   end
 
