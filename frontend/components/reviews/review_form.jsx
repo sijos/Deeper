@@ -32,6 +32,7 @@ class ReviewForm extends React.Component {
   }
 
   closeModal() {
+    this.props.clearErrors();
     this.setState(defaultState);
   }
 
