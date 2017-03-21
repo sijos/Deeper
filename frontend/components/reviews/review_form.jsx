@@ -32,7 +32,7 @@ class ReviewForm extends React.Component {
   }
 
   closeModal() {
-    this.setState({ modalOpen: false });
+    this.setState(defaultState);
   }
 
   handleSubmit(e) {
@@ -67,11 +67,14 @@ class ReviewForm extends React.Component {
     );
   }
 
-  renderRatingStars(ratingType) {
+  renderRatingStars(ratingType, ratingLabel) {
     return (
-      <ReactStars size={15} half={false}
-        value={this.state[ratingType]}
-        onChange={this.updateStars(ratingType)} />
+      <div className="form-row">
+        <label>{`${ratingLabel}`}</label>
+        <ReactStars size={24} half={false} color2={"#5CCCF0"}
+          value={this.state[ratingType]}
+          onChange={this.updateStars(ratingType)} />
+      </div>
     );
   }
 
@@ -98,42 +101,42 @@ class ReviewForm extends React.Component {
           contentLabel="Modal"
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
-          className="modal-form" overlayClassName="modal-form-overlay">
+          className="modal-form review-modal" overlayClassName="modal-form-overlay">
           <nav className="review-form-content">
-            <h2>Enter your review for {this.props.resortName} below:</h2>
+            <h2>Please enter your review for {this.props.resortName} below:</h2>
             {this.renderErrors()}
-            <form onSubmit={this.handleSubmit}>
-              <label> Share your thoughts here:
+            <form onSubmit={this.handleSubmit} className="review-form">
+              <div className="form-row">
+                <label>Share your thoughts and experiences here:</label>
                 <textarea
                   value={this.state.body}
                   onChange={this.update("body")}
                   className="review-body">
                 </textarea>
-              </label>
-              <label> Enter your rating:
-                <ReactStars size={22} half={false}
-                  value={this.state.overall_rating}
-                  onChange={this.updateStars("overall_rating")} />
-              </label>
+              </div>
               <h4>
                 Please rate the resort in each of the following categories:
               </h4>
-              <label>Basic Terrain:
-                {this.renderRatingStars("basic_t_rating")}
-              </label>
-              <label>Advanced Terrain:
-                {this.renderRatingStars("adv_t_rating")}
-              </label>
-              <label>Après Ski / Amenities:
-                {this.renderRatingStars("amenities_rating")}
-              </label>
-              <label>Experience / Customer Service:
-                {this.renderRatingStars("services_rating")}
-              </label>
-              <label>Value:
-                {this.renderRatingStars("value_rating")}
-              </label>
-              <input type="submit" value="Submit Review"></input>
+              {this.renderRatingStars("basic_t_rating", "Basic Terrain:")}
+              <p>Basic terrain includes all groomed runs rated beginner through intermediate (green, blue, double-blue, black)</p>
+              {this.renderRatingStars("adv_t_rating", "Advanced Terrain:")}
+              <p>Advanced terrain inlcudes all double-blacks, bowls, back-coutnry, side-country, tree runs, and parks</p>
+              {this.renderRatingStars("amenities_rating", "Après Ski / Amenities:")}
+              <p>Rating for resaurants, bars, and shops on the mountain and in the village/town area at the resort base</p>
+              {this.renderRatingStars("services_rating", "Experience / Customer Service:")}
+              <p>Includes quality of services, accessibility, friendliness of staff, and all other intangibles</p>
+              {this.renderRatingStars("value_rating", "Value:")}
+              <p>What you got relative to what you paid</p>
+              <div className="form-row-overall">
+                <label> Enter your overall rating (1-5 stars):
+                  <ReactStars size={32} half={false}
+                    value={this.state.overall_rating}
+                    onChange={this.updateStars("overall_rating")} />
+                </label>
+              </div>
+              <div className="submit-holder">
+                <input type="submit" value="Submit Review"></input>
+              </div>
             </form>
           </nav>
         </Modal>
