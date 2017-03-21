@@ -19,6 +19,10 @@ class Resort < ApplicationRecord
       limit(8)
   end
 
+  def self.search(query)
+    Resort.where("LOWER(resorts.name) like ?", "%#{query.downcase}%")
+  end
+
   def sorted_reviews
     self.reviews.sort { |a, b| b.created_at <=> a.created_at }
   end

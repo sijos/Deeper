@@ -24,3 +24,10 @@ export const fetchResort = (id) => (dispatch) => (
     resort => dispatch(receiveResort(resort))
   )
 );
+
+
+export const findResorts = (query) => (dispatch) => (
+  ResortAPI.findResorts(query).then(
+    resorts => dispatch(receiveResorts(resorts))
+  )
+);
