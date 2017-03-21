@@ -40,6 +40,7 @@ class ReviewForm extends React.Component {
     } else {
       this.props.updateReview(review);
     }
+    this.closeModal();
   }
 
   update(field) {
