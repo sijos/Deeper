@@ -46,6 +46,7 @@
 .index-container > h2 {
   font-size: 23px;
   font-weight: normal;
+	margin: 14px 0;
 }
 
 .resort-index {
@@ -59,13 +60,14 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
-  border: 1px solid grey;
+  border: 1px solid lightgray;
   border-radius: 5px;
   width: 195px;
   height: 120px;
   justify-content: center;
-  margin-bottom: 35px;
+  margin: 0 2% 35px 2%;
   transition: 0.3s;
+	font-size: 14px
 }
 
 .resort-item:hover {
@@ -80,4 +82,15 @@
   max-width: 180px;
   max-height: 101px;
   border-radius: 8px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(https://d30y9cdsu7xlg0.cloudfront.net/png/118616-200.png);
+  background-size: contain;
 }

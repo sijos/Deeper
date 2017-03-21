@@ -2,6 +2,7 @@ import React from 'react';
 import ResortIndexContainer from './resort_index_container';
 import SearchBar from '../search/search_bar';
 
+
 const Home = () => (
   <div className="main-content">
     <section className="video-holder">
@@ -13,6 +14,7 @@ const Home = () => (
         <h4 className="tagline">Your guide to the world's greatest mountains</h4>
         <SearchBar class="home-search-bar" />
       </nav>
+      <div className="arrow" />
     </section>
     <ResortIndexContainer />
   </div>
