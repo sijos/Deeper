@@ -25,7 +25,10 @@ class ReviewForm extends React.Component {
   }
 
   openModal(modalType) {
-    this.setState({ resort_id: this.props.resortId, modalOpen: true, modalType });
+    this.setState({
+      resort_id: this.props.resortId,
+      modalOpen: true,
+      modalType });
   }
 
   closeModal() {
@@ -40,7 +43,6 @@ class ReviewForm extends React.Component {
     } else {
       this.props.updateReview(review);
     }
-    this.closeModal();
   }
 
   update(field) {
@@ -73,6 +75,16 @@ class ReviewForm extends React.Component {
     );
   }
 
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((err, idx) => (
+          <li key={`error-${idx}`}>{err}</li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     return (
       <div>
@@ -89,6 +101,7 @@ class ReviewForm extends React.Component {
           className="modal-form" overlayClassName="modal-form-overlay">
           <nav className="review-form-content">
             <h2>Enter your review for {this.props.resortName} below:</h2>
+            {this.renderErrors()}
             <form onSubmit={this.handleSubmit}>
               <label> Share your thoughts here:
                 <textarea
@@ -102,7 +115,9 @@ class ReviewForm extends React.Component {
                   value={this.state.overall_rating}
                   onChange={this.updateStars("overall_rating")} />
               </label>
-              <h4>Please rate the resort in each of the following categories: </h4>
+              <h4>
+                Please rate the resort in each of the following categories:
+              </h4>
               <label>Basic Terrain:
                 {this.renderRatingStars("basic_t_rating")}
               </label>

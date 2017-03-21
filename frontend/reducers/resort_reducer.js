@@ -11,9 +11,9 @@ const ResortReducer = (state = _defaultResort, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_RESORT:
-      return merge({}, action.resort);
+      return merge({}, _defaultResort, action.resort);
     case RECEIVE_REVIEW:
-      let newState = merge({}, state);
+      let newState = merge({}, _defaultResort, state);
       newState.reviews.unshift(action.review);
       return newState;
     case RECEIVE_ERRORS:
