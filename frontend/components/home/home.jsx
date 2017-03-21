@@ -1,5 +1,6 @@
 import React from 'react';
 import ResortIndexContainer from './resort_index_container';
+import SearchBar from '../search/search_bar';
 
 const Home = () => (
   <div className="main-content">
@@ -10,6 +11,7 @@ const Home = () => (
       <nav className="title-holder">
         <h1 className="title">Snowscape</h1>
         <h4 className="tagline">Your guide to the world's greatest mountains</h4>
+        <SearchBar class="home-search-bar" />
       </nav>
     </section>
     <ResortIndexContainer />

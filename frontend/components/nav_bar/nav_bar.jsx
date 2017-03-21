@@ -14,7 +14,7 @@ class NavBar extends React.Component {
     if (this.props.navType === "search") {
       navClass = "search-nav-bar";
       headerClass = "search-header";
-      searchBar = <SearchBar />;
+      searchBar = <SearchBar class="nav-search-bar"/>;
       logo = <img className="logo" src='http://res.cloudinary.com/dagjelvab/image/upload/v1490030110/logo-white.png' />;
     } else {
       navClass = "nav-bar";
