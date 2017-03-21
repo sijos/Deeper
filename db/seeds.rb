@@ -8,14 +8,15 @@
 
 User.create([
   { username: 'scott', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" },
-  { username: 'zestyyy', password: 'password' },
+  { username: 'zestyyy', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" },
   { username: 'rage', password: 'password' },
-  { username: 'penguin', password: 'password' },
-  { username: 'Skimax', password: 'password' },
+  { username: 'penguin', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118540/penguin-icon.jpg" },
+  { username: 'Skimax', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" },
   { username: 'Randy', password: 'password' },
   { username: 'kale', password: 'password' },
   { username: 'powderHound', password: 'password' },
-  { username: 'doneSki', password: 'password' },
+  { username: 'doneSki', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" },
+  { username: 'GuestUser', password: 'password' }
 ])
 
 Resort.create([
