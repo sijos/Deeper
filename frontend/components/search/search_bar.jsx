@@ -1,5 +1,5 @@
 import React from 'react';
-import hashHistory from 'react-router';
+import { hashHistory } from 'react-router';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -15,10 +15,9 @@ class SearchBar extends React.Component {
 
   render() {
     return(
-      <form className={this.props.class}>
+      <form className={this.props.class} onClick={this.routeToSearch()}>
         <input type='text' placeholder = ' Search for your favorite mountain here!' />
-        <button type='submit' className="search-button"
-          onClick={this.routeToSearch()}>
+        <button type='submit' className="search-button">
           <i className="fa fa-search" />
         </button>
       </form>

@@ -545,6 +545,39 @@ Review.create([
     services_rating: 4,
     value_rating: 2
   },
+  {
+    resort_id: 2,
+    user_id: 9,
+    body: "Love the views, plenty to ride. Fun for the whole family.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 3,
+    amenities_rating: 4,
+    services_rating: 5,
+    value_rating: 2
+  },
+  {
+    resort_id: 12,
+    user_id: 8,
+    body: "Steep, long, fast. Not for beginners. Longest run top to bottom is 9 miles! Bring your powder legs.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 2,
+    services_rating: 3,
+    value_rating: 5
+  },
+  {
+    resort_id: 9,
+    user_id: 7,
+    body: "It's in Quebec, so they have great food. I love Canada!",
+    overall_rating: 4,
+    basic_t_rating: 2,
+    adv_t_rating: 2,
+    amenities_rating: 4,
+    services_rating: 5,
+    value_rating: 5
+  },
 ])
 
   # {

@@ -19,9 +19,9 @@ const receiveErrors = (errors) => ({
   errors
 });
 
-export const postReview = (review) => (dispatch) => {
+export const postReview = (review, callback) => (dispatch) => {
   ReviewAPI.postReview(review).then(
-    (review) => dispatch(receiveReview(review)),
+    (review) => { dispatch(receiveReview(review)); callback(); },
     (error) => dispatch(receiveErrors(error.responseJSON))
   );
 };

@@ -12,3 +12,11 @@ export const fetchResort = (id) => {
     url: `api/resorts/${id}`
   });
 };
+
+// export const findResorts = (params) => {
+//   return $.ajax({
+//     method: "GET",
+//     url: "api/resorts",
+//     data: { query: params }
+//   });
+// };

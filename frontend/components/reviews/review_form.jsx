@@ -39,7 +39,7 @@ class ReviewForm extends React.Component {
     e.preventDefault();
     const review = Object.assign({}, this.state);
     if (this.state.modalType === "new") {
-      this.props.postReview(review);
+      this.props.postReview(review, this.closeModal);
     } else {
       this.props.updateReview(review);
     }

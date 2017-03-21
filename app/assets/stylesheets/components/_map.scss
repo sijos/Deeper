@@ -8,17 +8,18 @@
 }
 
 .search-results-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 99%;
+  width: 35%;
+  right: 0px;
+  margin-right: 10px;
+  position: absolute;
 }
 
 .search-results-index {
   background-color: white;
   opacity: 0.9;
-  width: 35%;
+  width: 100%;
   max-width: 380px;
-  height: 83vh;
+  height: 88vh;
   margin-top: 20px;
   border-radius: 7px;
 }

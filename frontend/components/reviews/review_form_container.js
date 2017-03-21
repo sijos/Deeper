@@ -9,7 +9,7 @@ const mapStateToProps = ({ resort }) => ({
 
 
 const mapDispatchToProps = (dispatch) => ({
-  postReview: (review) => dispatch(postReview(review)),
+  postReview: (review, callback) => dispatch(postReview(review, callback)),
   updateReview: (review) => dispatch(updateReview(review))
 });
 
