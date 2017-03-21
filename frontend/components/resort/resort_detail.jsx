@@ -2,6 +2,7 @@ import React from 'react';
 import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
 import ReviewIndexItem from '../reviews/review_index_item';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -12,8 +13,14 @@ class ResortDetail extends React.Component {
     this.props.fetchResort(this.props.params.resortId);
   }
 
-  componentDidUpdate() {
-    this.props.fetchResort(this.props.params.resortId);
+  // componentDidUpdate() {
+  //   this.props.fetchResort(this.props.params.resortId);
+  // }
+
+  componentWillReceiveProps(newProps) {
+    if (this.props.params.resortId !== newProps.params.resortId) {
+      this.props.fetchResort(newProps.params.resortId);
+    }
   }
 
   mapPriceToSym() {
@@ -34,9 +41,7 @@ class ResortDetail extends React.Component {
   renderButtons() {
     return (
       <ul className="review-buttons">
-        <li><button>
-          <i className="fa fa-star-o"></i>Write a Review
-        </button></li>
+        <ReviewFormContainer resortName={this.props.resort.name} />
         <li><button>
           <i className="fa fa-camera"></i>Add Photo
         </button></li>

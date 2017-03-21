@@ -18,4 +18,8 @@ class Resort < ApplicationRecord
       order("COUNT(reviews.id) DESC").
       limit(8)
   end
+
+  def sorted_reviews
+    self.reviews.sort { |a, b| b.created_at <=> a.created_at }
+  end
 end

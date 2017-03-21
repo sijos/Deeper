@@ -6,7 +6,7 @@ json.extract! @resort, :id, :name, :address, :zip, :city,
 json.num_reviews @resort.reviews.length
 json.avg_rating @avg_rating
 
-json.reviews @resort.reviews do |review|
+json.reviews @resort.sorted_reviews do |review|
   json.id review.id
   json.date_posted review.created_at.strftime("%_m/%d/%Y")
   json.overall_rating review.overall_rating
