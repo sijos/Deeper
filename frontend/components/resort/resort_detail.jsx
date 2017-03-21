@@ -13,10 +13,6 @@ class ResortDetail extends React.Component {
     this.props.fetchResort(this.props.params.resortId);
   }
 
-  // componentDidUpdate() {
-  //   this.props.fetchResort(this.props.params.resortId);
-  // }
-
   componentWillReceiveProps(newProps) {
     if (this.props.params.resortId !== newProps.params.resortId) {
       this.props.fetchResort(newProps.params.resortId);
