@@ -2,7 +2,7 @@ import * as ReviewAPI from '../util/reviews_api_util';
 
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
 
 const receiveReview = (review) => ({
   type: RECEIVE_REVIEW,
@@ -15,7 +15,7 @@ const removeReview = (review) => ({
 });
 
 const receiveErrors = (errors) => ({
-  type: RECEIVE_ERRORS,
+  type: RECEIVE_REVIEW_ERRORS,
   errors
 });
 

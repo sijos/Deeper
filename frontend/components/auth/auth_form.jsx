@@ -22,6 +22,7 @@ class AuthForm extends React.Component {
   }
 
   closeModal() {
+    this.props.clearErrors();
     this.setState({modalOpen: false});
   }
 
@@ -52,13 +53,15 @@ class AuthForm extends React.Component {
   }
 
   renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((err, idx) => (
-          <li key={`error-${idx}`}>{err}</li>
-        ))}
-      </ul>
-    );
+    if (this.props.errors) {
+      return (
+        <ul>
+          {this.props.errors.map((err, idx) => (
+            <li key={`error-${idx}`}>{err}</li>
+          ))}
+        </ul>
+      );
+    }
   }
 
   render() {

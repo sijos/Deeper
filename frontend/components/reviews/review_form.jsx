@@ -57,16 +57,6 @@ class ReviewForm extends React.Component {
     );
   }
 
-  renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((err, idx) => (
-          <li key={`error-${idx}`}>{err}</li>
-        ))}
-      </ul>
-    );
-  }
-
   renderRatingStars(ratingType, ratingLabel) {
     return (
       <div className="form-row">

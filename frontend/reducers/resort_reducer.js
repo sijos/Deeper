@@ -1,5 +1,5 @@
 import { RECEIVE_RESORT } from '../actions/resort_actions';
-import { RECEIVE_REVIEW, RECEIVE_ERRORS } from '../actions/review_actions';
+import { RECEIVE_REVIEW, RECEIVE_REVIEW_ERRORS } from '../actions/review_actions';
 import merge from 'lodash/merge';
 
 const _defaultResort = {
@@ -20,7 +20,7 @@ const ResortReducer = (state = _defaultResort, action) => {
       newState.avg_rating =
         newRatings.reduce((a, b) => a + b, 0) / newState.num_reviews;
       return newState;
-    case RECEIVE_ERRORS:
+    case RECEIVE_REVIEW_ERRORS:
       let errors = action.errors;
       return merge({}, state, {errors});
     default:
