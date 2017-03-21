@@ -9,6 +9,10 @@ class ResortDetail extends React.Component {
     super(props);
   }
 
+  componentWillMount() {
+    window.scrollTo(0,0);
+  }
+
   componentDidMount() {
     this.props.fetchResort(this.props.params.resortId);
   }
