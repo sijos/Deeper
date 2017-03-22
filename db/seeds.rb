@@ -6,19 +6,20 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create([
-  { username: 'scott', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" },
-  { username: 'zestyyy', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" },
-  { username: 'rage', password: 'password' },
-  { username: 'penguin', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118540/penguin-icon.jpg" },
-  { username: 'Skimax', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" },
-  { username: 'Randy', password: 'password' },
-  { username: 'kale', password: 'password' },
-  { username: 'powderHound', password: 'password' },
-  { username: 'doneSki', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" },
-  { username: 'oreo', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" },
-  { username: 'GuestUser', password: 'GuestUser' }
-])
+
+scott =  { username: 'scott', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" }
+zestyyy =  { username: 'zestyyy', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" }
+rage =  { username: 'rage', password: 'password' }
+penguin =  { username: 'penguin', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118540/penguin-icon.jpg" }
+Skimax =  { username: 'Skimax', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
+Randy =  { username: 'Randy', password: 'password' }
+kale =  { username: 'kale', password: 'password' }
+powderHound =  { username: 'powderHound', password: 'password' }
+doneSki =  { username: 'doneSki', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
+oreo =  { username: 'oreo', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490200976/114293-glowing-purple-neon-icon-sports-hobbies-people-snowboarder_fw87xr.png" }
+GuestUser =  { username: 'GuestUser', password: 'GuestUser' }
+
+User.create([scott, zestyyy, rage, penguin, Skimax, Randy, kale, powderHound, doneSki, oreo, GuestUser])
 
 Resort.create([
   {
@@ -296,10 +297,10 @@ Resort.create([
     num_lifts: 8,
     price_rating: 2,
     website_url: 'http://skisolitude.com/',
-    trail_map_url: '',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199492/solitude-map.jpg',
     lat: 40.621062,
     lng: -111.593255,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199419/solitude-profile.jpg'
   },
   {
     name: 'Northstar',
@@ -316,10 +317,10 @@ Resort.create([
     num_lifts: 20,
     price_rating: 3,
     website_url: 'http://www.northstarcalifornia.com/',
-    trail_map_url:'',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199643/northstar-map.jpg',
     lat: 39.274839,
     lng: -120.120605,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199554/northstar-profile.jpg'
   },
   {
     name: 'Mammoth',
@@ -336,10 +337,10 @@ Resort.create([
     num_lifts: 28,
     price_rating: 4,
     website_url: 'http://www.mammothmountain.com/',
-    trail_map_url: '',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199744/mammoth-map.jpg',
     lat: 37.638831,
     lng: -119.026217,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199696/mammoth-profile.jpg'
   },
   {
     name: 'Sunshine Village',
@@ -356,10 +357,10 @@ Resort.create([
     num_lifts: 12,
     price_rating: 2,
     website_url: 'http://www.skibanff.com/',
-    trail_map_url: '',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199888/sunshine-village-map.jpg',
     lat: 51.115186,
     lng: -115.763276,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199806/sunshine-village-profile.jpg'
   },
   {
     name: 'Lake Louise',
@@ -376,10 +377,10 @@ Resort.create([
     num_lifts: 9,
     price_rating: 2,
     website_url: 'http://www.skilouise.com/',
-    trail_map_url: '',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200005/lake-louise-map.jpg',
     lat: 51.441921,
     lng: -116.162172,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199936/lake-louise-profile.jpg'
   },
   {
     name: 'Sierra at Tahoe',
@@ -396,10 +397,10 @@ Resort.create([
     num_lifts: 14,
     price_rating: 3,
     website_url: 'https://www.sierraattahoe.com/',
-    trail_map_url: '',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200294/sierra-map.jpg',
     lat: 38.799350,
     lng: -120.080906,
-    profile_pic_url: ''
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200105/sierra-profile.jpg'
   }
 ])
 
@@ -700,6 +701,160 @@ Review.create([
     services_rating: 5,
     value_rating: 5
   },
+  {
+    resort_id: 5,
+    user_id: 10,
+    body: "Fun mountain with plenty to do for all ski levels. The cost of a lift ticket is pretty high, so if you prioritize a more of a luxurious experience and groomers this one is for you. There is definitely some awesome terrain that opens up with a ton of snow, but other resorts in the area normally have more.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 4,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 3
+  },
+  {
+    resort_id: 6,
+    user_id: 10,
+    body: "This is a super fun mountain, especially for tree runs and park rats. Unfortunately it's gotten pretty crowded the past few years, but for the cost of a lift ticket it's a great value.",
+    overall_rating: 5,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 5
+  },
+  {
+    resort_id: 14,
+    user_id: 10,
+    body: "Solitude is mediocre during packed powder conditions, but on a powder day it's really hard to beat. It's never crowded. Check out Honeycomb canyon on a powder day and you won't be disappointed.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 4,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 5
+  },
+  {
+    resort_id: 7,
+    user_id: 10,
+    body: "Snowbird offers amazing advanced terrain and spectacular views. However, the lift lines get out of control and even on powder days the runs are skied out really quickly. Since the ticket price is so high, I'd recommend going on a weekday to beat the lines and get your money's worth.",
+    overall_rating: 4,
+    basic_t_rating: 3,
+    adv_t_rating: 5,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 1
+  },
+  {
+    resort_id: 1,
+    user_id: 10,
+    body: "Vail has it all. Check out the back bowls on a powder day and investigate the trees on the front side for hidden powder stashes. It's a huge mountain with a ton to offer.",
+    overall_rating: 4,
+    basic_t_rating: 4,
+    adv_t_rating: 5,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 3
+  },
+  {
+    resort_id: 16,
+    user_id: 10,
+    body: "Mammoth has a lot of terrain for every type of rider. It's not nearly as crowded as other large resorts like Vail and Snowbird, and has great amenities and a variety of runs for all conditions.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 4
+  },
+  {
+    resort_id: 2,
+    user_id: 10,
+    body: "Heavenly would be a much better mountain if it weren't always so overwhelmed with people. If you like to drink on the mountain and chill on groomers while regarding the views, you can definitely have a good time here.",
+    overall_rating: 3,
+    basic_t_rating: 4,
+    adv_t_rating: 4,
+    amenities_rating: 5,
+    services_rating: 4,
+    value_rating: 2
+  },
+  {
+    resort_id: 4,
+    user_id: 10,
+    body: "When conditions are great Kirkwood is a shredder's dream. The left side of the mountain offers steeps, trees, and fresh lines.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 4,
+    value_rating: 4
+  },
+  {
+    resort_id: 15,
+    user_id: 10,
+    body: "There isn't a lot of elevation here but when Tahoe gets dumped on Northstar stays open where as other resorts close due to snow and wind conditions. It's a quiet, peaceful local feeling resort and great for the value.",
+    overall_rating: 4,
+    basic_t_rating: 4,
+    adv_t_rating: 4,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 3
+  },
+  {
+    resort_id: 12,
+    user_id: 10,
+    body: "This mountain is almost entirely vertical, with over 5500 feet elevation change from top to bottom. As far as tree runs go, Revelstoke is #1.  The views and terrain are incredible, but be careful as there are tons of unmarked cliffs. Definitely a more advanced mountain.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 4,
+    services_rating: 5,
+    value_rating: 5
+  },
+  {
+    resort_id: 3,
+    user_id: 10,
+    body: "Whistler has something for everyone. Try not to go during holidays though because the lift lines get really long.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 4,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 4
+  },
+  {
+    resort_id: 18,
+    user_id: 10,
+    body: "Visibility in the back bowls is really flat if when it's snowing, but if conditions are right you can choose the adventure that is perfect for you. This varied alpine terrain is great for advanced riders.",
+    overall_rating: 4,
+    basic_t_rating: 5,
+    adv_t_rating: 4,
+    amenities_rating: 4,
+    services_rating: 5,
+    value_rating: 4
+  },
+  {
+    resort_id: 17,
+    user_id: 10,
+    body: "Wow, the reputation doesn't do this mountain justice. With 12 lifts, trees, a huge park, bowls, groomers, steeps, and views, I'm not sure what more you could ask for. Check out Goat's eye for fun tree runs.",
+    overall_rating: 5,
+    basic_t_rating: 5,
+    adv_t_rating: 5,
+    amenities_rating: 5,
+    services_rating: 5,
+    value_rating: 5
+  },
+  {
+    resort_id: 12,
+    user_id: 2,
+    body: "My best powder days in North America have been here. I went mid-March 2017 and for two days, I had thigh high powder. I also really enjoy the mountain for the lack of crowds and the skill level seems to be above average. The tree runs here were also super playful. Not many lifts, but the runs are super long.",
+    overall_rating: 4,
+    basic_t_rating: 3,
+    adv_t_rating: 5,
+    amenities_rating: 2,
+    services_rating: 5,
+    value_rating: 5
+  }
 ])
 
   # {
