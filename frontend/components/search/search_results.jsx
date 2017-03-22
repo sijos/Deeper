@@ -1,15 +1,21 @@
 import React from 'react';
+import SearchResultItem from './search_result_item';
+import { hashHistory } from 'react-router';
+
+const routeToResort = (id) => {
+  return (e) => {
+    hashHistory.push(`/resorts/${id}`);
+  };
+};
 
 const SearchResults = ({ resorts }) => (
-  <section className="search-results-container">
-    <div className="search-results-index">
-      <ul>
-        {resorts.map((resort) =>
-          <li key={resort.id}>{resort.name}</li>
-        )}
-      </ul>
-    </div>
-  </section>
+  <ul className="search-results-index">
+    {resorts.map((resort) =>
+      <li key={resort.id} onClick={routeToResort(resort.id)}>
+        <SearchResultItem resort={resort}/>
+      </li>
+    )}
+  </ul>
 );
 
 export default SearchResults;
