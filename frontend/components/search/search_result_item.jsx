@@ -3,7 +3,7 @@ import ReactStars from 'react-stars';
 
 const SearchResultItem = ( {resort} ) => {
   return (
-    <div className="search-result-item">
+    <div className="search-result-item" id={`search-item-${resort.id}`}>
       <img className="profile-pic col-1-3" src={resort.profile_pic_url}></img>
       <ul className="name-rating col-1-3">
         <li className="resort-name">{resort.name}</li>

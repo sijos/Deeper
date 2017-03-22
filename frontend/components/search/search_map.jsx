@@ -14,7 +14,7 @@ class SearchMap extends React.Component {
 
   componentDidMount() {
     const mapOptions = {
-      center: { lat: 40.1381272, lng: -108.022974 },
+      center: { lat: 40.8898739, lng: -112.7767094 },
       zoom: 5
     };
 
@@ -77,7 +77,24 @@ class SearchMap extends React.Component {
       infoWindow.close(this.mapNode, marker);
     });
 
+    const listHoverItem = document.getElementById(`search-item-${resort.id}`);
+    if (listHoverItem) {
+      listHoverItem.onmouseover = () => {
+        this.markers.forEach(opaqueMarker => {
+          opaqueMarker.setOpacity(0.4);
+        });
+        marker.setOpacity(1);
+        infoWindow.open(this.map, marker);
+      };
+      listHoverItem.onmouseout = () => {
+        this.markers.forEach(fullMarker => {
+          fullMarker.setOpacity(1);
+        });
+        infoWindow.close(this.map, marker)
+      };
+    }
   }
+
 
   render() {
     return(
