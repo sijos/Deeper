@@ -15,6 +15,7 @@ class AuthForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.loginDemo = this.loginDemo.bind(this);
   }
 
   openModal(modalType) {
@@ -50,6 +51,26 @@ class AuthForm extends React.Component {
     return (e) => (
       this.setState({[field]: e.target.value})
     );
+  }
+
+  loginDemo() {
+    const fillInputs = (arr, int) => {
+      if (arr.length > 0) {
+        let newState = Object.assign({}, this.state);
+        let nextLetter = arr.shift();
+        newState.username += nextLetter;
+        newState.password += nextLetter;
+        this.setState(newState);
+        setTimeout(fillInputs.bind(this), int, arr, int);
+      } else {
+        setTimeout(() => (
+          document.getElementById("submit").click()), 500);
+      }
+    };
+
+    this.setState({username: "", password: ""});
+    let arr = "GuestUser".split("");
+    setTimeout(fillInputs.bind(this), 600, arr, 100);
   }
 
   renderErrors() {
@@ -94,6 +115,10 @@ class AuthForm extends React.Component {
               <div>Please {formText} below or {this.swapForm()}</div>
             </div>
             {this.renderErrors()}
+            <h5>Just passing through? Use our
+              <button onClick={this.loginDemo} className="swap-button"
+                > Demo Account</button>
+            </h5>
             <form onSubmit={this.handleSubmit} className="login-form">
               <input type="text"
                 value={this.state.username}
@@ -109,7 +134,7 @@ class AuthForm extends React.Component {
                 placeholder=" Enter Password">
                 </input>
               <br />
-              <input type="submit" value={submitText}></input>
+              <input type="submit" id="submit" value={submitText}></input>
             </form>
           </nav>
         </Modal>

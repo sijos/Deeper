@@ -16,7 +16,7 @@ User.create([
   { username: 'kale', password: 'password' },
   { username: 'powderHound', password: 'password' },
   { username: 'doneSki', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" },
-  { username: 'GuestUser', password: 'password' }
+  { username: 'GuestUser', password: 'GuestUser' }
 ])
 
 Resort.create([
