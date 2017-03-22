@@ -101,7 +101,7 @@ Resort.create([
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489782484/kirkwood-profile.jpg'
   },
   {
-    name: 'Park City Mountain Resort',
+    name: 'Park City',
     address: '1345 Lowell Ave',
     zip: '84060',
     city: 'Park City',
@@ -161,7 +161,7 @@ Resort.create([
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489786126/snowbird-profile.jpg'
   },
   {
-    name: 'Jackson Hole Mountain Resort',
+    name: 'Jackson Hole',
     address: '3395 Cody Ln',
     zip: '83025',
     city: 'Teton Village',
