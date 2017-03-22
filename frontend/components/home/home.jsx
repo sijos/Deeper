@@ -12,7 +12,7 @@ const Home = () => (
       <nav className="title-holder">
         <h1 className="title">Snowscape</h1>
         <h4 className="tagline">Your guide to the world's greatest mountains</h4>
-        <SearchBarContainer class="home-search-bar" />
+        <SearchBarContainer path="/" class="home-search-bar" />
       </nav>
 
     </section>

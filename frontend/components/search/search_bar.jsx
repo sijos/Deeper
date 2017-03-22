@@ -16,7 +16,9 @@ class SearchBar extends React.Component {
   }
 
   routeToSearch() {
-    hashHistory.push("/resorts");
+    if (this.props.path !== "/resorts") {
+      hashHistory.push("/resorts");
+    }
   }
 
   handleSubmit(e) {
@@ -26,17 +28,33 @@ class SearchBar extends React.Component {
     );
   }
 
-  render() {
-    return(
-      <form className={this.props.class} onSubmit={this.handleSubmit}>
+  renderFormContent() {
+    return (
+      <div className="search-form-content">
         <input type='text'
           placeholder = ' Search for your favorite mountain here!'
           onChange={this.update("input")}/>
         <button type='submit' className="search-button">
           <i className="fa fa-search" />
         </button>
-      </form>
+      </div>
     );
+  }
+
+  render() {
+    if (this.props.path === "/resorts") {
+      return(
+        <form className={this.props.class} onKeyUp={this.handleSubmit}>
+          {this.renderFormContent()}
+        </form>
+      );
+    } else {
+      return(
+        <form className={this.props.class} onSubmit={this.handleSubmit}>
+          {this.renderFormContent()}
+        </form>
+      );
+    }
   }
 }
 
