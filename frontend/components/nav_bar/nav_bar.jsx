@@ -1,6 +1,6 @@
 import React from 'react';
 import AuthContainer from '../auth/auth_container';
-import SearchBar from '../search/search_bar';
+import SearchBarContainer from '../search/search_bar_container';
 import { hashHistory } from 'react-router';
 
 class NavBar extends React.Component {
@@ -14,7 +14,7 @@ class NavBar extends React.Component {
     if (this.props.navType === "search") {
       navClass = "search-nav-bar";
       headerClass = "search-header";
-      searchBar = <SearchBar class="nav-search-bar"/>;
+      searchBar = <SearchBarContainer class="nav-search-bar"/>;
       logo = <img className="logo" src='http://res.cloudinary.com/dagjelvab/image/upload/v1490030110/logo-white.png' />;
     } else {
       navClass = "nav-bar";

@@ -1,9 +1,13 @@
 import React from 'react';
 
-const SearchResults = () => (
+const SearchResults = ({ resorts }) => (
   <section className="search-results-container">
     <div className="search-results-index">
-      search results here
+      <ul>
+        {resorts.map((resort) =>
+          <li key={resort.id}>{resort.name}</li>
+        )}
+      </ul>
     </div>
   </section>
 );
