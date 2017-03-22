@@ -7,6 +7,7 @@ class SearchBar extends React.Component {
     this.state = {input: ""};
     this.handleSubmit = this.handleSubmit.bind(this);
     this.routeToSearch = this.routeToSearch.bind(this);
+    // this.state = { lastUpdated: } #add time here
   }
 
   update(field) {
