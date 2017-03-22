@@ -9,6 +9,7 @@ class SearchMap extends React.Component {
     this.markers = [];
     this.createMarker = this.createMarker.bind(this);
     this.clearMarkers = this.clearMarkers.bind(this);
+    this.resetMarkers = this.resetMarkers.bind(this);
   }
 
   componentDidMount() {
@@ -18,13 +19,14 @@ class SearchMap extends React.Component {
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-
-    // if (this.props.resorts) {
-    //
-    // }
+    this.resetMarkers();
   }
 
   componentDidUpdate() {
+    this.resetMarkers();
+  }
+
+  resetMarkers() {
     if (this.props.resorts) {
       this.clearMarkers();
       this.props.resorts.forEach((resort) => this.createMarker(resort, this.map));
@@ -61,7 +63,6 @@ class SearchMap extends React.Component {
     const resortDetails = (
       '<div class="info-window-content">' +
         `<h2>${resort.name}</h2>` +
-        `<ReactStars size={12} edit={false} value={${resort.avg_rating}} />` +
       '</div>'
     );
 

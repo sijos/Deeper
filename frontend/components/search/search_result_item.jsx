@@ -7,11 +7,11 @@ const SearchResultItem = ( {resort} ) => {
       <img className="profile-pic col-1-3" src={resort.profile_pic_url}></img>
       <ul className="name-rating col-1-3">
         <li className="resort-name">{resort.name}</li>
+        <li>{resort.country}</li>
         <li>
           <ReactStars size={12} edit={false}
             color2={"#5CCCF0"} value={resort.avg_rating} />
         </li>
-        <li>{resort.country}</li>
       </ul>
       <ul className="address col-1-3">
         <li>{resort.address}</li>
