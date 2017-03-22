@@ -5,12 +5,12 @@
   height: 88vh;
   margin-top: 20px;
   border-radius: 7px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: scroll;
   width: 37%;
   left: 0px;
   margin-left: 15px;
   position: absolute;
+  max-width: 500px;
 }
 
 .search-results-index ul {
@@ -59,4 +59,13 @@
 
 .address a {
   text-decoration: underline;
+}
+
+.address li {
+  text-align: center;
+}
+
+.address li:first-of-type {
+  height: auto;
+  padding-bottom: 3px;
 }

@@ -44,7 +44,7 @@
 }
 
 .index-container > h2 {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: normal;
 	margin: 14px 0;
 }
@@ -83,14 +83,18 @@
   max-height: 101px;
   border-radius: 8px;
 }
-
-.arrow {
-  position: absolute;
-  bottom: 6vh;
-  left: 50%;
-  margin-left:-20px;
-  width: 50px;
-  height: 50px;
-  background-image: url(https://cdn0.iconfinder.com/data/icons/common-2/100/icon-27-512.png);
-  background-size: contain;
+.route-button {
+  margin: 0;
+  text-decoration: underline;
+  font-size: 22px;
+  border: none;
+  transition: none;
+  &:hover {
+    background-color: transparent;
+    color: black;
+    border: none;
+    transition: 0s;
+    opacity: 1;
+  }
+  padding: 0;
 }

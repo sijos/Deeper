@@ -4,6 +4,7 @@ import { hashHistory } from 'react-router';
 class ResortIndex extends React.Component {
   constructor(props) {
     super(props);
+    this.routeToMap = this.routeToMap.bind(this);
   }
 
   componentDidMount() {
@@ -17,10 +18,18 @@ class ResortIndex extends React.Component {
     };
   }
 
+  routeToMap() {
+    this.props.findResorts("");
+    hashHistory.push('/resorts');
+  }
+
   render() {
     return (
       <div className="index-container">
-        <h2>Popular Mountains</h2>
+        <h2>Check out popular mountains below or&nbsp;
+          <button className="route-button" onClick={this.routeToMap}>
+            click here </button> to view map of all resorts!
+        </h2>
         <ul className="resort-index">
           {this.props.resorts.map(resort => (
             <li key={resort.id} className="resort-item"

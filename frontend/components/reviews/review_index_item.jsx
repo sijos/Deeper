@@ -13,7 +13,7 @@ const ReviewIndexItem = ({review, currentUser, resortName}) => {
   );
 
   const editButtons = () => {
-    if (currentUser.id === review.reviewer.id) {
+    if (currentUser && currentUser.id === review.reviewer.id) {
       return (
         <ReviewFormContainer formType="edit"
           resortName={resortName}
