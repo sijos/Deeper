@@ -24,6 +24,18 @@ class SearchMap extends React.Component {
 
   componentDidUpdate() {
     this.resetMarkers();
+    if (this.markers.length === 1) {
+      let pos = new google.maps.LatLng(
+        this.markers[0].position.lat(),
+        this.markers[0].position.lng()
+      );
+      this.map.setCenter(pos);
+      this.map.setZoom(10);
+    } else if (this.markers.length === 19) {
+      let pos = new google.maps.LatLng(40.8898739, -112.7767094);
+      this.map.setCenter(pos);
+      this.map.setZoom(5);
+    }
   }
 
   resetMarkers() {
