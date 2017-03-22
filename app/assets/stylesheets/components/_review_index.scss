@@ -45,6 +45,13 @@
   margin: 14px 0;
   font-size: 15px;
   font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-body > div > div {
+  display: flex;
+  align-items: center;
 }
 
 .rating-bar {

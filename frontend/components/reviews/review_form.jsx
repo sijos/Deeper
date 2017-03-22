@@ -25,10 +25,27 @@ class ReviewForm extends React.Component {
   }
 
   openModal(modalType) {
-    this.setState({
-      resort_id: this.props.resortId,
-      modalOpen: true,
-      modalType });
+    if (modalType === "new") {
+      this.setState({
+        resort_id: this.props.resortId,
+        modalOpen: true,
+        modalType });
+    } else {
+      const review = this.props.review;
+      this.setState({
+        resort_id: this.props.resortId,
+        modalOpen: true,
+        body: review.body,
+        overall_rating: review.overall_rating,
+        basic_t_rating: review.basic_t_rating,
+        adv_t_rating: review.adv_t_rating,
+        amenities_rating: review.amenities_rating,
+        services_rating: review.services_rating,
+        value_rating: review.value_rating,
+        id: review.id,
+        modalType
+      });
+    }
   }
 
   closeModal() {
@@ -80,11 +97,12 @@ class ReviewForm extends React.Component {
   }
 
   render() {
+    const buttonText = this.props.formType === 'new' ? 'Write a' : 'Edit your';
     return (
       <div>
         <li>
-          <button onClick={this.openModal.bind(this, "new")}>
-            <i className="fa fa-star-o" />Write a Review
+          <button onClick={this.openModal.bind(this, this.props.formType)}>
+            <i className="fa fa-star-o" />{buttonText} Review
           </button>
         </li>
 

@@ -12,7 +12,7 @@ class Api::ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
     if @review.update_attributes(review_params)
-      render "api/resorts/#{params.resort_id}"
+      render :show
     else
       render json: @review.errors.full_messages, status: 422
     end
@@ -22,7 +22,7 @@ class Api::ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     if @review
       @review.destroy
-      render "api/resorts/#{params[resort_id]}"
+      render :show
     else
       render json: ["Review not found"], status: 404
     end

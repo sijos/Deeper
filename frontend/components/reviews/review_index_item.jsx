@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactStars from 'react-stars';
+import ReviewFormContainer from './review_form_container';
 
-const ReviewIndexItem = ({review}) => {
+const ReviewIndexItem = ({review, currentUser, resortName}) => {
 
   const ratingBar = (score, title) => (
     <li className="rating-bar">
@@ -10,6 +11,16 @@ const ReviewIndexItem = ({review}) => {
       </div>
     </li>
   );
+
+  const editButtons = () => {
+    if (currentUser.id === review.reviewer.id) {
+      return (
+        <ReviewFormContainer formType="edit"
+          resortName={resortName}
+          review={review} />
+      );
+    }
+  };
 
   return (
     <li className="review">
@@ -32,7 +43,10 @@ const ReviewIndexItem = ({review}) => {
         </ul>
       </section>
       <section className="date-body col-1-2">
-        <h3>{review.date_posted}</h3>
+        <div>
+          <h3>{review.date_posted}</h3>
+          {editButtons()}
+        </div>
         <p>{review.body}</p>
       </section>
     </li>

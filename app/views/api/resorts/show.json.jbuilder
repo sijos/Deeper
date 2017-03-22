@@ -18,6 +18,6 @@ json.reviews @resort.sorted_reviews do |review|
   json.body review.body
 
   json.reviewer do
-    json.extract! review.user, :username, :profile_pic_url
+    json.extract! review.user, :username, :profile_pic_url, :id
   end
 end

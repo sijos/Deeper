@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
-import ReviewIndexItem from '../reviews/review_index_item';
+import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
 
 class ResortDetail extends React.Component {
@@ -41,7 +41,8 @@ class ResortDetail extends React.Component {
   renderButtons() {
     return (
       <ul className="review-buttons">
-        <ReviewFormContainer resortName={this.props.resort.name} />
+        <ReviewFormContainer formType="new"
+          resortName={this.props.resort.name} />
         <li><button>
           <i className="fa fa-camera"></i>Add Photo
         </button></li>
@@ -88,7 +89,9 @@ class ResortDetail extends React.Component {
         <ul className="review-index">
           <h4>{noReviews}</h4>
           {resort.reviews.map(review => (
-            <ReviewIndexItem key={review.id} review={review} />
+            <ReviewIndexContainer key={review.id}
+              resortName={resort.name}
+              review={review} />
           ))}
         </ul>
       </div>
