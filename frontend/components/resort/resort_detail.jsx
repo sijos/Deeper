@@ -3,6 +3,7 @@ import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
+import PhotoForm from '../photos/photo_form';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -99,6 +100,7 @@ class ResortDetail extends React.Component {
               review={review} />
           ))}
         </ul>
+        <PhotoForm />
       </div>
     );
   }
