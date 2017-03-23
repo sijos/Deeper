@@ -1,4 +1,9 @@
 class Api::ReviewsController < ApplicationController
+  def index
+    @reviews = Review.where("resort_id = #{params[:resort_id]}")
+    render :index
+  end
+
   def create
     @review = Review.new(review_params)
     @review.user_id = current_user.id

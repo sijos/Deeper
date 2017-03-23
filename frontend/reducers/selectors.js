@@ -9,3 +9,7 @@ export const selectHomeResorts = ({ resorts }) => (
 export const selectSearchResorts = ({ resorts }) => (
   Object.keys(resorts).map(id => resorts[id])
 );
+
+export const selectReviews = ({ reviews }) => (
+  Object.keys(reviews).map(id => reviews[id])
+);

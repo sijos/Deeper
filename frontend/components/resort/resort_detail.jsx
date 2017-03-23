@@ -52,7 +52,7 @@ class ResortDetail extends React.Component {
 
   render() {
     const resort = this.props.resort;
-    const noReviews = resort.reviews.length < 1 ?
+    const noReviews = this.props.reviews.length < 1 ?
       "This mountain doesn't have any reviews yet, be the first to write one!"
       : "";
     return (
@@ -88,8 +88,8 @@ class ResortDetail extends React.Component {
         </div>
         <ul className="review-index">
           <h4>{noReviews}</h4>
-          {resort.reviews.map(review => (
-            <ReviewIndexContainer key={review.id}
+          {this.props.reviews.map((review, idx) => (
+            <ReviewIndexContainer key={idx}
               resortName={resort.name}
               review={review} />
           ))}
