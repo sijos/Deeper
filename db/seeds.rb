@@ -868,3 +868,10 @@ Review.create([
   #   services_rating:
   #   value_rating:
   # }
+
+  Photo.create!([
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg", caption: nil},
+  ])

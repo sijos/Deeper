@@ -3,6 +3,7 @@ import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
+import PhotoFormContainer from '../photos/photo_form_container';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -15,11 +16,15 @@ class ResortDetail extends React.Component {
 
   componentDidMount() {
     this.props.fetchResort(this.props.params.resortId);
+    this.props.fetchReviews(this.props.params.resortId);
+    this.props.fetchPhotos(this.props.params.resortId);
   }
 
   componentWillReceiveProps(newProps) {
     if (this.props.params.resortId !== newProps.params.resortId) {
       this.props.fetchResort(newProps.params.resortId);
+      this.props.fetchReviews(newProps.params.resortId);
+      this.props.fetchPhotos(newProps.params.resortId);
     }
   }
 
@@ -32,9 +37,11 @@ class ResortDetail extends React.Component {
   }
 
   renderStars() {
+    const ratings = this.props.reviews.map(review => review.overall_rating);
+    const avgRating = ratings.reduce(((a, b) => a + b), 0) / this.props.reviews.length;
     return (
       <ReactStars edit={false} color1={"lightgray"} color2={"black"}
-        size={22} value={this.props.resort.avg_rating}/>
+        size={22} value={avgRating}/>
     );
   }
 
@@ -43,16 +50,14 @@ class ResortDetail extends React.Component {
       <ul className="review-buttons">
         <ReviewFormContainer formType="new"
           resortName={this.props.resort.name} />
-        <li><button>
-          <i className="fa fa-camera"></i>Add Photo
-        </button></li>
+        <PhotoFormContainer resortName={this.props.resort.name} />
       </ul>
     );
   }
 
   render() {
     const resort = this.props.resort;
-    const noReviews = resort.reviews.length < 1 ?
+    const noReviews = this.props.reviews.length < 1 ?
       "This mountain doesn't have any reviews yet, be the first to write one!"
       : "";
     return (
@@ -65,7 +70,7 @@ class ResortDetail extends React.Component {
                 <div className="review-stars">
                   {this.renderStars()}
                 </div>
-                <div>{resort.num_reviews} Reviews</div>
+                <div>{this.props.reviews.length} Reviews</div>
               </div>
               <ul className="location">
                 <li>{this.mapPriceToSym()}</li>
@@ -82,14 +87,15 @@ class ResortDetail extends React.Component {
               </div>
             </div>
             <div className="photo-carousel">
-              <ResortPhotoCarousel />
+              <ResortPhotoCarousel photos={this.props.photos}/>
             </div>
           </div>
         </div>
         <ul className="review-index">
           <h4>{noReviews}</h4>
-          {resort.reviews.map(review => (
-            <ReviewIndexContainer key={review.id}
+          {this.props.reviews.map((review, idx) => (
+            <ReviewIndexContainer key={idx}
+              deleteReview={this.props.deleteReview}
               resortName={resort.name}
               review={review} />
           ))}

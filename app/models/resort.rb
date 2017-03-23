@@ -24,6 +24,6 @@ class Resort < ApplicationRecord
   end
 
   def sorted_reviews
-    self.reviews.sort { |a, b| b.created_at <=> a.created_at }
+    self.reviews.sort { |a, b| b.updated_at <=> a.updated_at }
   end
 end
