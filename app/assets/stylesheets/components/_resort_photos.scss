@@ -31,13 +31,15 @@
   padding-left: 50px;
 }
 
-
 .slider-img {
   width: auto;
   height: 190px;
   padding-right: 15px;
 }
 
-.slick-slider button {
-  background-color: $midnight;
+.slick-arrow {
+  background-color: $black !important;
+  &:hover {
+    background-color: $black !important;
+  }
 }

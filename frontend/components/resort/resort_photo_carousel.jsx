@@ -1,5 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
+import CustomPrevArrow from './custom_prev_arrow';
+
+
+//
+// const CustomNextArrow = () => (
+//   <i className="fa fa-arrow-right"></i>
+// );
+
 
 const ResortPhotoCarousel = ({ photos }) => {
   let settings = {
@@ -9,7 +17,9 @@ const ResortPhotoCarousel = ({ photos }) => {
     slidesToShow: 3,
     slidesToScroll:1,
     arrows: true,
-    variableWidth: true,
+    // nextArrow: {CustomPrevArrow},
+    // prevArrow: {CustomNextArrow},
+    variableWidth: true
   };
 
   if (photos.length > 1) {
