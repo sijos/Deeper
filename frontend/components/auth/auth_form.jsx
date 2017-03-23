@@ -54,6 +54,7 @@ class AuthForm extends React.Component {
   }
 
   loginDemo() {
+    this.setState({modalType: 'login'});
     const fillInputs = (arr, int) => {
       if (arr.length > 0) {
         let newState = Object.assign({}, this.state);
@@ -115,10 +116,7 @@ class AuthForm extends React.Component {
               <div>Please {formText} below or {this.swapForm()}</div>
             </div>
             {this.renderErrors()}
-            <h5>Just passing through? Use our
-              <button onClick={this.loginDemo} className="swap-button"
-                > Demo Account</button>
-            </h5>
+
             <form onSubmit={this.handleSubmit} className="login-form">
               <input type="text"
                 value={this.state.username}
@@ -126,16 +124,20 @@ class AuthForm extends React.Component {
                 className="text-input"
                 placeholder=" Enter Username">
               </input>
-              <br />
               <input type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
                 className="text-input"
                 placeholder=" Enter Password">
                 </input>
-              <br />
-              <input type="submit" id="submit" value={submitText}></input>
+              <input type="submit" id="submit"
+                value={submitText} className="submit-button" />
             </form>
+              <div className="demo">
+              <h5>Just passing through? Use our </h5>
+              <button onClick={this.loginDemo} className="submit-button"
+                > Demo Account</button>
+            </div>
           </nav>
         </Modal>
       </div>
