@@ -9,7 +9,7 @@ const _noReviews = {
   errors: []
 };
 
-const ReviewReducer = (state = _noReviews, action) => {
+const ReviewsReducer = (state = _noReviews, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_REVIEWS:
@@ -30,4 +30,4 @@ const ReviewReducer = (state = _noReviews, action) => {
   }
 };
 
-export default ReviewReducer;
+export default ReviewsReducer;
