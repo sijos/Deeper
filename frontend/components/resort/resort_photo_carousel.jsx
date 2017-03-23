@@ -1,7 +1,5 @@
 import React from 'react';
 import Slider from 'react-slick';
-import CustomPrevArrow from './custom_prev_arrow';
-
 
 const ResortPhotoCarousel = ({ photos }) => {
   let settings = {
