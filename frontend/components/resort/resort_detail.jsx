@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactStars from 'react-stars';
-import ResortPhotoCarousel from './resort_photo_carousel';
+import ResortPhotoCarousel from '../photos/resort_photo_carousel';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
 import PhotoFormContainer from '../photos/photo_form_container';
