@@ -1,12 +1,18 @@
 import * as ReviewAPI from '../util/reviews_api_util';
 
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
+export const UPDATE_REVIEW = "UPDATE_REVIEW";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const RECEIVE_REVIEW_ERRORS = "RECEIVE_REVIEW_ERRORS";
 export const CLEAR_REVEIW_ERRORS = "CLEAR_REVEIW_ERRORS";
 
 const receiveReview = (review) => ({
   type: RECEIVE_REVIEW,
+  review
+});
+
+const patchReview = (review) => ({
+  type: UPDATE_REVIEW,
   review
 });
 
@@ -33,7 +39,7 @@ export const postReview = (review, callback) => (dispatch) => {
 
 export const updateReview = (review) => (dispatch) => {
   ReviewAPI.updateReview(review).then(
-    (review) => dispatch(receiveReview(review)),
+    (review) => dispatch(patchReview(review)),
     (error) => dispatch(receiveErrors(error.responseJSON))
   );
 };
