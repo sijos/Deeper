@@ -3,7 +3,7 @@ import ReactStars from 'react-stars';
 import ResortPhotoCarousel from './resort_photo_carousel';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
-import PhotoForm from '../photos/photo_form';
+import PhotoFormContainer from '../photos/photo_form_container';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -48,9 +48,7 @@ class ResortDetail extends React.Component {
       <ul className="review-buttons">
         <ReviewFormContainer formType="new"
           resortName={this.props.resort.name} />
-        <li><button>
-          <i className="fa fa-camera"></i>Add Photo
-        </button></li>
+        <PhotoFormContainer resortName={this.props.resort.name} />
       </ul>
     );
   }
@@ -100,7 +98,6 @@ class ResortDetail extends React.Component {
               review={review} />
           ))}
         </ul>
-        <PhotoForm />
       </div>
     );
   }

@@ -25,9 +25,9 @@ export const fetchPhotos = (resortId) => (dispatch) => {
   );
 };
 
-export const postPhoto = (photo) => (dispatch) => {
+export const postPhoto = (photo, callback) => (dispatch) => {
   PhotoAPI.postPhoto(photo).then(
-    (photo) => dispatch(receivePhoto(photo))
+    (photo) => { dispatch(receivePhoto(photo)); callback(); }
   );
 };
 

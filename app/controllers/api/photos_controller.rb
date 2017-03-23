@@ -21,11 +21,12 @@ class Api::PhotosController < ApplicationController
       render :show
     else
       render json: ["Photo not found"], status: 404
+    end
   end
 
   private
 
   def photo_params
-    params.reqire(:photo).permit(:resort_id, :url, :caption)
+    params.require(:photo).permit(:resort_id, :url, :caption)
   end
 end
