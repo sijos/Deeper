@@ -43,9 +43,9 @@ export const postReview = (review, callback) => (dispatch) => {
   );
 };
 
-export const updateReview = (review) => (dispatch) => {
+export const updateReview = (review, callback) => (dispatch) => {
   ReviewAPI.updateReview(review).then(
-    (review) => dispatch(receiveReview(review)),
+    (review) => { dispatch(receiveReview(review)); callback(); },
     (error) => dispatch(receiveErrors(error.responseJSON))
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactStars from 'react-stars';
 import ReviewFormContainer from './review_form_container';
 
-const ReviewIndexItem = ({review, currentUser, resortName}) => {
+const ReviewIndexItem = ({review, currentUser, resortName, deleteReview}) => {
 
   const ratingBar = (score, title) => (
     <li className="rating-bar">
@@ -12,12 +12,22 @@ const ReviewIndexItem = ({review, currentUser, resortName}) => {
     </li>
   );
 
+  const handleClick = (id) => {
+    return (e) => {
+      e.preventDefault();
+      deleteReview(id);
+    };
+  };
+
   const editButtons = () => {
     if (currentUser && currentUser.id === review.reviewer.id) {
       return (
-        <ReviewFormContainer formType="edit"
-          resortName={resortName}
-          review={review} />
+        <div className="edit-buttons">
+          <ReviewFormContainer formType="edit"
+            resortName={resortName}
+            review={review} />
+          <button onClick={handleClick(review.id)}>Delete Review</button>
+        </div>
       );
     }
   };

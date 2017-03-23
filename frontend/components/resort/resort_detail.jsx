@@ -34,9 +34,11 @@ class ResortDetail extends React.Component {
   }
 
   renderStars() {
+    const ratings = this.props.reviews.map(review => review.overall_rating);
+    const avgRating = ratings.reduce(((a, b) => a + b), 0) / this.props.reviews.length;
     return (
       <ReactStars edit={false} color1={"lightgray"} color2={"black"}
-        size={22} value={this.props.resort.avg_rating}/>
+        size={22} value={avgRating}/>
     );
   }
 
@@ -67,7 +69,7 @@ class ResortDetail extends React.Component {
                 <div className="review-stars">
                   {this.renderStars()}
                 </div>
-                <div>{resort.num_reviews} Reviews</div>
+                <div>{this.props.reviews.length} Reviews</div>
               </div>
               <ul className="location">
                 <li>{this.mapPriceToSym()}</li>
@@ -92,6 +94,7 @@ class ResortDetail extends React.Component {
           <h4>{noReviews}</h4>
           {this.props.reviews.map((review, idx) => (
             <ReviewIndexContainer key={idx}
+              deleteReview={this.props.deleteReview}
               resortName={resort.name}
               review={review} />
           ))}
