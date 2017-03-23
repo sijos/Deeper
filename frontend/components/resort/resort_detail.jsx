@@ -17,12 +17,14 @@ class ResortDetail extends React.Component {
   componentDidMount() {
     this.props.fetchResort(this.props.params.resortId);
     this.props.fetchReviews(this.props.params.resortId);
+    this.props.fetchPhotos(this.props.params.resortId);
   }
 
   componentWillReceiveProps(newProps) {
     if (this.props.params.resortId !== newProps.params.resortId) {
       this.props.fetchResort(newProps.params.resortId);
       this.props.fetchReviews(newProps.params.resortId);
+      this.props.fetchPhotos(newProps.params.resortId);
     }
   }
 
@@ -85,7 +87,7 @@ class ResortDetail extends React.Component {
               </div>
             </div>
             <div className="photo-carousel">
-              <ResortPhotoCarousel />
+              <ResortPhotoCarousel photos={this.props.photos}/>
             </div>
           </div>
         </div>

@@ -13,3 +13,7 @@ export const selectSearchResorts = ({ resorts }) => (
 export const selectReviews = ({ reviews }) => (
   Object.keys(reviews).map(id => reviews[id]).slice(0, -1)
 );
+
+export const selectPhotos = ({ photos }) => (
+  Object.keys(photos).map(id => photos[id])
+);
