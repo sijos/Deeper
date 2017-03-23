@@ -1,0 +1,27 @@
+.photo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.photo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 22%;
+  justify-content: space-around;
+}
+
+.photo-input > * {
+  font-size: 15px;
+}
+
+.file-upload  {
+  display: flex;
+  justify-content: center;
+}
+
+.file-upload > div {
+  width: 75%;
+  text-align: center;
+}

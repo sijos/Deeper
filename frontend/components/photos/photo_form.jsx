@@ -79,7 +79,8 @@ class PhotoForm extends React.Component {
           onRequestClose={this.closeModal}
           className="modal-form photo-form"
           overlayClassName="modal-form-overlay">
-          <nav>Add a photo for {this.props.resortName} below, then
+          <nav className="photo-input">
+            <div>Add a photo for {this.props.resortName} below, then</div>
             <button onClick={this.handleSubmit}>Click to Submit!</button>
           </nav>
           <div className="file-upload">
