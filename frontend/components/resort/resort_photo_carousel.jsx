@@ -28,9 +28,3 @@ const ResortPhotoCarousel = ({ photos }) => {
   }
 };
 export default ResortPhotoCarousel;
-
-// <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489708055/resort%20pics/vail-profile.jpg"></img></div>
-// <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg"></img></div>
-// <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg"></img></div>
-// <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg"></img></div>
-// <div><img className="slider-img" src="http://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg"></img></div>
