@@ -4,8 +4,8 @@ import { postReview,
         clearErrors } from '../../actions/review_actions';
 import ReviewForm from './review_form';
 
-const mapStateToProps = ({ resort }) => ({
-  errors: resort.errors,
+const mapStateToProps = ({ resort, reviews }) => ({
+  errors: reviews.errors,
   resortId: resort.id
 });
 

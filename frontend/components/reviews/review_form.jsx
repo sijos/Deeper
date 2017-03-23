@@ -12,7 +12,7 @@ const defaultState = {
   services_rating: 0,
   value_rating: 0,
   modalOpen: false,
-  modalType: "new"
+  modalType: ""
 };
 
 class ReviewForm extends React.Component {
@@ -59,7 +59,7 @@ class ReviewForm extends React.Component {
     if (this.state.modalType === "new") {
       this.props.postReview(review, this.closeModal);
     } else {
-      this.props.updateReview(review);
+      this.props.updateReview(review, this.closeModal);
     }
   }
 

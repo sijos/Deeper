@@ -11,5 +11,5 @@ export const selectSearchResorts = ({ resorts }) => (
 );
 
 export const selectReviews = ({ reviews }) => (
-  Object.keys(reviews).map(id => reviews[id])
+  Object.keys(reviews).map(id => reviews[id]).slice(0, -1)
 );
