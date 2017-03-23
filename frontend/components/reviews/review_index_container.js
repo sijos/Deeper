@@ -1,13 +1,8 @@
 import { connect } from 'react-redux';
 import ReviewIndexItem from './review_index_item';
 
-const mapStateToProps = ({ session }, ownProps) =>  {
-  debugger;
-  return {
-  currentUser: session.currentUser,
-  review: ownProps.revivew,
-  resortName: ownProps.resortName
-}
-};
+const mapStateToProps = ({ session }) =>  ({
+  currentUser: session.currentUser
+});
 
 export default connect(mapStateToProps, null)(ReviewIndexItem);

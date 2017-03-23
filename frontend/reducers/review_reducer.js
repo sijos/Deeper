@@ -6,7 +6,6 @@ import { RECEIVE_REVIEW,
 import merge from 'lodash/merge';
 
 const _noReviews = {
-  0: {reviewer: {username: "", profile_pic_url: ""}},
   errors: []
 };
 

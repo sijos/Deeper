@@ -15,11 +15,13 @@ class ResortDetail extends React.Component {
 
   componentDidMount() {
     this.props.fetchResort(this.props.params.resortId);
+    this.props.fetchReviews(this.props.params.resortId);
   }
 
   componentWillReceiveProps(newProps) {
     if (this.props.params.resortId !== newProps.params.resortId) {
       this.props.fetchResort(newProps.params.resortId);
+      this.props.fetchReviews(this.props.params.resortId);
     }
   }
 
@@ -88,7 +90,7 @@ class ResortDetail extends React.Component {
         </div>
         <ul className="review-index">
           <h4>{noReviews}</h4>
-          {this.props.reviews.map((review, idx) => (
+          {this.props.reviews.slice(0, -1).map((review, idx) => (
             <ReviewIndexContainer key={idx}
               resortName={resort.name}
               review={review} />
