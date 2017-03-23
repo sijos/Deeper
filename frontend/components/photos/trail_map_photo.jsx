@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 
-class PhotoCarouselItem extends React.Component {
+class TrailMapPhoto extends React.Component {
   constructor(props) {
     super(props);
     this.state = { modalOpen: false };
@@ -19,22 +19,34 @@ class PhotoCarouselItem extends React.Component {
 
   render() {
     return (
-      <div>
-        <div onClick={this.openModal}>
-          <img className="slider-img clickable" src={this.props.photoUrl} />
+      <div className="trail-map-container" onClick={this.openModal}>
+        <div className="thumbnail">
+          <div className="trail-map clickable"
+            style={{backgroundImage: `url(${this.props.trailMapUrl})`}}>
+          </div>
+          <p>Click to view full map!</p>
         </div>
 
         <Modal
           contentLabel="Modal"
           isOpen={this.state.modalOpen}
           onRequestClose={this.closeModal}
-          className="photo-modal modal-form"
+          className="modal-form photo-modal"
           overlayClassName="modal-form-overlay">
-          <img className="lg-slider-img" src={this.props.photoUrl} />
+          <img className="lg-trail-map" src={this.props.trailMapUrl} />
         </Modal>
       </div>
     );
   }
 }
 
-export default PhotoCarouselItem;
+export default TrailMapPhoto;
+
+//
+// let newObj = {};
+//
+// arr.forEach((element) => {
+//   if Object.keys.includes(element) {
+//     newObj[element] = obj[element]
+//   }
+// }

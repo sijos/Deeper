@@ -4,6 +4,7 @@ import ResortPhotoCarousel from '../photos/resort_photo_carousel';
 import ReviewIndexContainer from '../reviews/review_index_container';
 import ReviewFormContainer from '../reviews/review_form_container';
 import PhotoFormContainer from '../photos/photo_form_container';
+import TrailMapPhoto from '../photos/trail_map_photo';
 
 class ResortDetail extends React.Component {
   constructor(props) {
@@ -81,11 +82,7 @@ class ResortDetail extends React.Component {
             {this.renderButtons()}
           </div>
           <div className="resort-photos-container">
-            <div className="trail-map-container">
-              <div className="thumbnail">
-                <img className="trail-map" src={resort.trail_map_url} />
-              </div>
-            </div>
+            <TrailMapPhoto trailMapUrl={resort.trail_map_url} />
             <div className="photo-carousel">
               <ResortPhotoCarousel photos={this.props.photos}/>
             </div>
