@@ -58,6 +58,8 @@
 
 .review-stars span {
   margin-right: 10px;
+  cursor: default;
+  z-index: -20;
 }
 
 .location {
