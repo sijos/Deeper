@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170320203841) do
+ActiveRecord::Schema.define(version: 20170324021117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,20 +33,21 @@ ActiveRecord::Schema.define(version: 20170320203841) do
     t.string   "city",                         null: false
     t.string   "state_province",               null: false
     t.string   "country",                      null: false
-    t.integer  "vertical_drop",                null: false
-    t.integer  "peak_elevation",               null: false
-    t.float    "avg_snowfall",                 null: false
-    t.integer  "num_trails",                   null: false
-    t.integer  "num_lifts",                    null: false
+    t.integer  "vertical_drop"
+    t.integer  "peak_elevation"
+    t.float    "avg_snowfall"
+    t.float    "longest_run"
+    t.integer  "num_lifts"
     t.integer  "price_rating",                 null: false
     t.string   "website_url",                  null: false
-    t.string   "trail_map_url",                null: false
+    t.string   "trail_map_url"
     t.float    "lat",                          null: false
     t.float    "lng",                          null: false
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.string   "profile_pic_url", default: ""
-    t.integer  "skiable_acres",                null: false
+    t.integer  "skiable_acres"
+    t.string   "region"
   end
 
   create_table "reviews", force: :cascade do |t|

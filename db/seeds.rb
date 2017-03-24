@@ -29,11 +29,12 @@ Resort.create([
     city: 'Vail',
     state_province: 'CO',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 5289,
     vertical_drop: 3450,
     peak_elevation: 11570,
     avg_snowfall: 29.0,
-    num_trails: 193,
+    longest_run: 3.0,
     num_lifts: 31,
     price_rating: 4,
     website_url: 'http://www.vail.com/',
@@ -49,11 +50,12 @@ Resort.create([
     city: 'South Lake Tahoe',
     state_province: 'CA',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 4800,
     vertical_drop: 3502,
     peak_elevation: 10067,
     avg_snowfall: 30.0,
-    num_trails: 97,
+    longest_run: 5.5,
     num_lifts: 28,
     price_rating: 4,
     website_url: 'http://www.skiheavenly.com/',
@@ -69,11 +71,12 @@ Resort.create([
     city: 'Whistler',
     state_province: 'BC',
     country: 'Canada',
+    region: 'North America',
     skiable_acres: 8171,
     vertical_drop: 5279,
     peak_elevation: 7493,
     avg_snowfall: 38.5,
-    num_trails: 200,
+    longest_run: 6.8,
     num_lifts: 37,
     price_rating: 3,
     website_url: 'https://www.whistlerblackcomb.com/',
@@ -89,11 +92,12 @@ Resort.create([
     city: 'Kirkwood',
     state_province: 'CA',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 2300,
     vertical_drop: 2000,
     peak_elevation: 9800,
     avg_snowfall: 49.9,
-    num_trails: 86,
+    longest_run: 2.6,
     num_lifts: 15,
     price_rating: 3,
     website_url: 'http://www.kirkwood.com/',
@@ -109,11 +113,12 @@ Resort.create([
     city: 'Park City',
     state_province: 'UT',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 3300,
     vertical_drop: 3200,
     peak_elevation: 10000,
     avg_snowfall: 29.6,
-    num_trails: 333,
+    longest_run: 3.5,
     num_lifts: 41,
     price_rating: 4,
     website_url: 'http://www.parkcitymountain.com/',
@@ -129,13 +134,14 @@ Resort.create([
     city: 'Brighton',
     state_province: 'UT',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 1050,
     vertical_drop: 1745,
     peak_elevation: 10500,
     avg_snowfall: 41.7,
-    num_trails: 66,
+    longest_run: 3.0,
     num_lifts: 6,
-    price_rating: 3 ,
+    price_rating: 3,
     website_url: 'http://www.brightonresort.com/',
     trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489784575/brighton-map.jpg',
     lat: 40.592546,
@@ -149,11 +155,12 @@ Resort.create([
     city: 'Sandy',
     state_province: 'UT',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 2500,
     vertical_drop: 3420,
     peak_elevation: 11000,
     avg_snowfall: 42.0,
-    num_trails: 169,
+    longest_run: 2.5,
     num_lifts: 11,
     price_rating: 4,
     website_url: 'http://www.snowbird.com/',
@@ -169,11 +176,12 @@ Resort.create([
     city: 'Teton Village',
     state_province: 'WY',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 2500,
     vertical_drop: 4139,
     peak_elevation: 10450,
     avg_snowfall: 38.4,
-    num_trails: 141,
+    longest_run: 4.5,
     num_lifts: 12,
     price_rating: 4,
     website_url: 'https://www.jacksonhole.com/',
@@ -189,11 +197,12 @@ Resort.create([
     city: 'Mont-Tremblant',
     state_province: 'QC',
     country: 'Canada',
+    region: 'North America',
     skiable_acres: 650,
     vertical_drop: 2116,
     peak_elevation: 2871,
     avg_snowfall: 13.0,
-    num_trails: 98,
+    longest_run: 3.7,
     num_lifts: 14,
     price_rating: 3,
     website_url: 'https://www.tremblant.ca/',
@@ -209,11 +218,12 @@ Resort.create([
     city: 'Eden',
     state_province: 'UT',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 5500,
     vertical_drop: 2522,
     peak_elevation: 9422,
     avg_snowfall: 41.7,
-    num_trails: 167,
+    longest_run: 3.0,
     num_lifts: 9,
     price_rating: 2,
     website_url: 'http://www.powdermountain.com/',
@@ -229,11 +239,12 @@ Resort.create([
     city: 'Beaver Creek',
     state_province: 'CO',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 1815,
     vertical_drop: 3340,
     peak_elevation: 11440,
     avg_snowfall: 25.8,
-    num_trails: 150,
+    longest_run: 2.8,
     num_lifts: 25,
     price_rating: 4,
     website_url: 'http://www.beavercreek.com/',
@@ -249,11 +260,12 @@ Resort.create([
     city: 'Revelstoke',
     state_province: 'BC',
     country: 'Canada',
+    region: 'North America',
     skiable_acres: 3121,
     vertical_drop: 5620,
     peak_elevation: 7300,
     avg_snowfall: 37.7,
-    num_trails: 69,
+    longest_run: 9.4,
     num_lifts: 5,
     price_rating: 2,
     website_url: 'http://www.revelstokemountainresort.com/',
@@ -269,11 +281,12 @@ Resort.create([
     city: 'Snowshoe',
     state_province: 'WV',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 251,
     vertical_drop: 1500,
     peak_elevation: 4848,
     avg_snowfall: 15.0,
-    num_trails: 72,
+    longest_run: 1.0,
     num_lifts: 14,
     price_rating: 2,
     website_url: 'https://www.snowshoemtn.com/',
@@ -289,11 +302,12 @@ Resort.create([
     city: 'Solitude',
     state_province: 'UT',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 1200,
     vertical_drop: 2047,
     peak_elevation: 10035,
     avg_snowfall: 41.7,
-    num_trails: 2,
+    longest_run: 3.5,
     num_lifts: 8,
     price_rating: 2,
     website_url: 'http://skisolitude.com/',
@@ -309,11 +323,12 @@ Resort.create([
     city: 'Truckee',
     state_province: 'CA',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 3170,
     vertical_drop: 2280,
     peak_elevation: 8610,
     avg_snowfall: 29.2,
-    num_trails: 1,
+    longest_run: 1.3,
     num_lifts: 20,
     price_rating: 3,
     website_url: 'http://www.northstarcalifornia.com/',
@@ -329,11 +344,12 @@ Resort.create([
     city: 'Mammoth Lakes',
     state_province: 'CA',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 3500,
     vertical_drop: 3100,
     peak_elevation: 11053,
     avg_snowfall: 33.4,
-    num_trails: 3,
+    longest_run: 3,
     num_lifts: 28,
     price_rating: 4,
     website_url: 'http://www.mammothmountain.com/',
@@ -349,11 +365,12 @@ Resort.create([
     city: 'Banff',
     state_province: 'Alberta',
     country: 'Canada',
+    region: 'North America',
     skiable_acres: 3358,
     vertical_drop: 3510,
     peak_elevation: 8957,
     avg_snowfall: 26.3,
-    num_trails: 4,
+    longest_run: 5,
     num_lifts: 12,
     price_rating: 2,
     website_url: 'http://www.skibanff.com/',
@@ -369,11 +386,12 @@ Resort.create([
     city: 'Lake Louise',
     state_province: 'Alberta',
     country: 'Canada',
+    region: 'North America',
     skiable_acres: 4200,
     vertical_drop: 3250,
     peak_elevation: 8650,
     avg_snowfall: 11.9,
-    num_trails: 139,
+    longest_run: 5,
     num_lifts: 9,
     price_rating: 2,
     website_url: 'http://www.skilouise.com/',
@@ -389,11 +407,12 @@ Resort.create([
     city: 'Twin Bridges',
     state_province: 'CA',
     country: 'USA',
+    region: 'North America',
     skiable_acres: 2000,
     vertical_drop: 2212,
     peak_elevation: 8852,
     avg_snowfall: 40,
-    num_trails: 2,
+    longest_run: 2.5,
     num_lifts: 14,
     price_rating: 3,
     website_url: 'https://www.sierraattahoe.com/',
@@ -401,6 +420,741 @@ Resort.create([
     lat: 38.799350,
     lng: -120.080906,
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200105/sierra-profile.jpg'
+  },
+  {
+    name: 'Aspen/Snowmass',
+    address: '601 E Dean St',
+    zip: '81611',
+    city: 'Aspen',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 4,
+    website_url: 'https://www.aspensnowmass.com/',
+    lat: 39.220431,
+    lng: -106.861513,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Copper',
+    address: '209 Ten Mile Cir',
+    zip: '80443',
+    city: 'Frisco',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'http://www.coppercolorado.com/',
+    lat: 39.501941,
+    lng: -106.154069,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Steamboat',
+    address: '2305 Mt Werner Cir',
+    zip: '80487',
+    city: 'Steamboat Springs',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'https://www.steamboat.com/',
+    lat: 40.457175,
+    lng: -106.804533,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Breckenridge',
+    address: '1599 Ski Hill Rd',
+    zip: '80424',
+    city: 'Breckenridge',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 4,
+    website_url: 'http://www.breckenridge.com/',
+    lat: 39.478262,
+    lng:  -106.07232,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Telluride',
+    address: '565 Mountain Village Blvd',
+    zip: '81435',
+    city: 'Telluride',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 4,
+    website_url: 'http://www.tellurideskiresort.com/',
+    lat: 37.936520,
+    lng:  -107.846386,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Keystone',
+    address: '21996 US 6',
+    zip: '80435',
+    city: 'Dillon',
+    state_province: 'CO',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'http://www.keystoneresort.com/',
+    lat: 39.605331,
+    lng: -105.976513,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Sun Valley',
+    address: '500 River Run Dr',
+    zip: '83340',
+    city: 'Ketchum',
+    state_province: 'ID',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 2,
+    website_url: 'https://www.sunvalley.com/',
+    lat: 43.696962,
+    lng: -114.352886,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Big Sky',
+    address: '50 Big Sky Resort Rd',
+    zip: '59716',
+    city: 'Big Sky',
+    state_province: 'MT',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'http://bigskyresort.com/',
+    lat: 45.283436,
+    lng: -111.400368,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Squaw Valley',
+    address: '1960 Squaw Valley Rd',
+    zip: '96146',
+    city: 'Olympic Valley',
+    state_province: 'CA',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 4,
+    website_url: 'http://squawalpine.com/',
+    lat: 39.197607,
+    lng: -120.235442,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Taos',
+    address: '116 Sutton Pl',
+    zip: '87525',
+    city: 'Taos Ski Valley',
+    state_province: 'NM',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'http://www.skitaos.com/',
+    lat: 36.596000,
+    lng: -105.4545,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Sugar Mountain',
+    address: '1009 Sugar Mountain Dr',
+    zip: '28604',
+    city: 'Sugar Mountain',
+    state_province: 'NC',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 1,
+    website_url: 'http://www.skisugar.com/',
+    lat: 36.129954,
+    lng: -81.856974,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Sugarbush',
+    address: '1840 Sugarbush Access Rd',
+    zip: '05647',
+    city: 'Warren',
+    state_province: 'VT',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 2,
+    website_url: 'http://www.sugarbush.com/',
+    lat: 44.145466,
+    lng: -72.879556,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Stratton',
+    address: '5 Village Lodge Rd',
+    zip: '05155',
+    city: 'South Londonderry',
+    state_province: 'VT',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 3,
+    website_url: 'https://www.stratton.com/',
+    lat: 43.113441,
+    lng: -72.90813,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Killington',
+    address: '4763 Killington Rd',
+    zip: '05751',
+    city: 'Killington',
+    state_province: 'VT',
+    country: 'USA',
+    region: 'North America',
+    price_rating: 4,
+    website_url: 'http://www.killington.com/site/index.html',
+    lat: 43.619801,
+    lng: -72.80271,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Ski Arlberg',
+    address: 'St Anton',
+    zip: '6580',
+    city: 'Arlberg',
+    state_province: '-',
+    country: 'Austria',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'http://www.skiarlberg.at/en',
+    lat: 47.133335,
+    lng: 10.224125,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Kitzbühel',
+    address: 'Hahnenkammstraße 1a',
+    zip: '6370',
+    city: 'Kitzbühel',
+    state_province: '-',
+    country: 'Austria',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'https://www.kitzski.at/',
+    lat: 47.442905,
+    lng: 12.389977,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Nendaz (Les 4 Vallées)',
+    address: '61 Route de la Télécabine',
+    zip: '1997',
+    city: 'Nendaz',
+    state_province: '-',
+    country: 'Switzerland',
+    region: 'Europe',
+    price_rating: 4,
+    website_url: 'https://www.nendaz.ch/',
+    lat: 46.180595,
+    lng:  7.294582,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Zermatt',
+    address: 'Bahnhofstrasse 15',
+    zip: '3920',
+    city: 'Zermatt',
+    state_province: '-',
+    country: 'Switzerland',
+    region: 'Europe',
+    price_rating: 4,
+    website_url: 'http://www.skizermatt.com/',
+    lat: 46.021956,
+    lng: 7.747205,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Jakobshorn',
+    address: 'Brämabüelstrasse 11',
+    zip: '7270',
+    city: 'Davos',
+    state_province: '-',
+    country: 'Switzerland',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'http://www.davos.ch/winter/berge/jakobshorn/',
+    lat: 46.772448,
+    lng: 9.849322,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Chamonix-Mont-Blanc',
+    address: '136 Allee Du Majestic',
+    zip: '74404',
+    city: 'Chamonix-Mont-Blanc',
+    state_province: '-',
+    country: 'France',
+    region: 'Europe',
+    price_rating: 4,
+    website_url: 'http://www.chamonix.com/chamonix-mont-blanc,0,en.html',
+    lat: 45.923961,
+    lng: 6.863494,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Méribel - Les 3 Vallées',
+    address: 'Route de la Chaudanne',
+    zip: '73550',
+    city: 'Les Allues',
+    state_province: 'France',
+    country: 'USA',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'https://www.skipass-meribel.com/fr/',
+    lat: 45.390905,
+    lng: 6.568081,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Livingo'
+    address: 'Via Saroch, 1242/G'
+    zip: '23030'
+    city: 'Livingo'
+    state_province: 'Sondrino'
+    country: 'Italy'
+    region: 'Europe'
+    price_rating: 3
+    website_url: 'https://www.carosello3000.com/it/'
+    lat: 46.540747,
+    lng: 10.136705,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Val di Fassa',
+    address: 'Piaza de Sèn Nicolò, 4',
+    zip: '38036',
+    city: 'Pozza di Fassa',
+    state_province: 'Trento',
+    country: 'Italy',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'http://www.fassa.com/?l=en',
+    lat: 46.429380,
+    lng: 11.694922,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Alta Badia',
+    address: 'Str. Burjé',
+    zip: '39033',
+    city: 'Corvara In Badia',
+    state_province: 'BZ',
+    country: 'Italy',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'http://www.dolomitisuperski.com/en',
+    lat:46.581050,
+    lng:  11.901718,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Tenjindaira',
+    address: '群馬県利根郡みなかみ町湯檜曽湯吹山国有林',
+    zip: '379-1728',
+    city: '-',
+    state_province: 'Honshu',
+    country: 'Japan',
+    region: 'Japan',
+    price_rating: 2,
+    website_url: 'http://www.tanigawadake-rw.com/gelande/',
+    lat: 36.836540,
+    lng: 138.96156,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Kurodake',
+    address: '北海道上川郡上川町字層雲峡',
+    zip: '078-1701',
+    city: '-',
+    state_province: 'Hokkaido',
+    country: 'Japan',
+    region: 'Japan',
+    price_rating: 2,
+    website_url: 'http://www.rinyu.co.jp/modules/pico01/',
+    lat: 43.710705,
+    lng: 142.938852,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Minowa',
+    address: '猪苗代町横向',
+    zip: '969-2751',
+    city: '-',
+    state_province: 'Yama',
+    country: 'Japan',
+    region: 'Japan',
+    price_rating: 2,
+    website_url: 'http://www.ski-minowa.jp/',
+    lat: 37.650453,
+    lng: 140.255626,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Nozawa Onsen',
+    address: '7653 Toyosato',
+    zip: '389-2502',
+    city: 'Nozawaonsen',
+    state_province: 'Shimotakai',
+    country: 'Japan',
+    region: 'Japan',
+    price_rating: 2,
+    website_url: 'http://www.nozawaski.com/',
+    lat: 36.920027,
+    lng: 138.451982,
+    profile_pic_url:
+    trail_map_url:
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Furano',
+    address: '〒',
+    zip: '076-8511',
+    city: '-',
+    state_province: 'Hokkaido',
+    country: 'Japan',
+    region: 'Japan',
+    price_rating: 2,
+    website_url: 'http://www.princehotels.co.jp/ski/furano/',
+    lat: 43.323288,
+    lng: 142.354093,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Cardrona',
+    address: 'Cardrona Valley Rd',
+    zip: '9381',
+    city: 'Cardrona',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 3,
+    website_url: 'https://www.cardrona.com/',
+    lat: -44.873268,
+    lng: 168.948797,
+    profile_pic_url:
+    trail_map_url:
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Mount Olympus',
+    address: 'Harper Road',
+    zip: '7572',
+    city: 'Lake Coleridge',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 3,
+    website_url: 'http://www.mtolympus.co.nz/',
+    lat: -43.193421,
+    lng: 171.606473,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Treble Cone',
+    address: 'Mt Aspiring Rd',
+    zip: '9305',
+    city: 'Wanaka',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 2,
+    website_url: 'http://www.treblecone.com/',
+    lat: -44.643403,
+    lng: 168.931298
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Roundhill',
+    address: '2544 Lilybank Rd',
+    zip: '7999',
+    city: 'Tekapo',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 3,
+    website_url: 'http://www.roundhill.co.nz/',
+    lat: -43.825259,
+    lng: 170.656192,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'Coronet Peak',
+    address: 'Skippers Road',
+    zip: '9300',
+    city: 'Queenstown',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 2,
+    website_url: 'https://www.nzski.com/queenstown/the-mountains/coronet-peak',
+    lat: -44.927491,
+    lng: 168.736029,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
+  },
+  {
+    name: 'The Remarkables',
+    address: 'The Remarkables Ski Area',
+    zip: '9300',
+    city: 'Queenstown',
+    state_province: '-',
+    country: 'New Zealand',
+    region: 'NZ/Australia',
+    price_rating: 2,
+    website_url: '-',
+    lat: -45.054069,
+    lng: 168.814304,
+    profile_pic_url: '-',
+    trail_map_url: '-'
+    # skiable_acres:
+    # vertical_drop:
+    # peak_elevation:
+    # avg_snowfall:
+    # longest_run:
+    # num_lifts:
   }
 ])
 
@@ -415,7 +1169,7 @@ Resort.create([
 #   vertical_drop:
 #   peak_elevation:
 #   avg_snowfall:
-#   num_trails:
+#   longest_run:
 #   num_lifts:
 #   price_rating:
 #   website_url:
@@ -870,6 +1624,10 @@ Review.create([
   # }
 
   Photo.create!([
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg", caption: nil},
+    {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg", caption: nil},
     {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262750/hgandg5purdl0rqhgiyt.jpg", caption: nil},
     {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262798/olpz80iaatpbt16kncp3.jpg", caption: nil},
     {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262810/ozzrh0oexciybzancetv.jpg", caption: nil},
