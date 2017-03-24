@@ -720,7 +720,7 @@ Resort.create([
     address: 'St Anton',
     zip: '6580',
     city: 'Arlberg',
-    state_province: '-',
+    # state_province: '-',
     country: 'Austria',
     region: 'Europe',
     price_rating: 3,
@@ -741,7 +741,7 @@ Resort.create([
     address: 'Hahnenkammstraße 1a',
     zip: '6370',
     city: 'Kitzbühel',
-    state_province: '-',
+    # state_province: '-',
     country: 'Austria',
     region: 'Europe',
     price_rating: 3,
@@ -762,7 +762,7 @@ Resort.create([
     address: '61 Route de la Télécabine',
     zip: '1997',
     city: 'Nendaz',
-    state_province: '-',
+    # state_province: '-',
     country: 'Switzerland',
     region: 'Europe',
     price_rating: 4,
@@ -783,7 +783,7 @@ Resort.create([
     address: 'Bahnhofstrasse 15',
     zip: '3920',
     city: 'Zermatt',
-    state_province: '-',
+    # state_province: '-',
     country: 'Switzerland',
     region: 'Europe',
     price_rating: 4,
@@ -800,19 +800,20 @@ Resort.create([
     # num_lifts:
   },
   {
-    name: 'Jakobshorn',
+    name: 'Davos',
     address: 'Brämabüelstrasse 11',
     zip: '7270',
+
     city: 'Davos',
-    state_province: '-',
+    # state_province: '-',
     country: 'Switzerland',
     region: 'Europe',
     price_rating: 3,
     website_url: 'http://www.davos.ch/winter/berge/jakobshorn/',
     lat: 46.772448,
     lng: 9.849322,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382943/lvk0haxgazdjyd1ysfdk.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382937/ijxfyyipkxuykmuwn8rr.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -825,15 +826,15 @@ Resort.create([
     address: '136 Allee Du Majestic',
     zip: '74404',
     city: 'Chamonix-Mont-Blanc',
-    state_province: '-',
+    # state_province: '-',
     country: 'France',
     region: 'Europe',
     price_rating: 4,
     website_url: 'http://www.chamonix.com/chamonix-mont-blanc,0,en.html',
     lat: 45.923961,
     lng: 6.863494,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382796/djfw6gyofrc0hjnty3hm.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382781/icrxh9uikqfbcerczrht.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -846,15 +847,15 @@ Resort.create([
     address: 'Route de la Chaudanne',
     zip: '73550',
     city: 'Les Allues',
-    state_province: 'France',
-    country: 'USA',
+    # state_province: 'France',
+    country: 'France',
     region: 'Europe',
     price_rating: 3,
     website_url: 'https://www.skipass-meribel.com/fr/',
     lat: 45.390905,
     lng: 6.568081,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382586/tzj4ryngrj9xn8ueodo5.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382573/knhrp9gsmsgfoyjnao00.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -874,8 +875,8 @@ Resort.create([
     website_url: 'https://www.carosello3000.com/it/',
     lat: 46.540747,
     lng: 10.136705,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382437/r0iuw7nisejkbp1lv4c3.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382430/fsqyoox9rkylkwyrhxdh.gif'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -895,8 +896,8 @@ Resort.create([
     website_url: 'http://www.fassa.com/?l=en',
     lat: 46.429380,
     lng: 11.694922,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382304/qrnqaj5dgl4gtx7itwdm.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382287/kvrqrczq0zeyws6ijpvm.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -916,8 +917,8 @@ Resort.create([
     website_url: 'http://www.dolomitisuperski.com/en',
     lat:46.581050,
     lng:  11.901718,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382098/qirffzi4rpukfzou0oym.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381948/i3xanbs3nspwjfizup2o.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -929,16 +930,16 @@ Resort.create([
     name: 'Tenjindaira',
     address: '群馬県利根郡みなかみ町湯檜曽湯吹山国有林',
     zip: '379-1728',
-    city: '-',
-    state_province: 'Honshu',
+    city: 'Honshu',
+    # state_province: 'Honshu',
     country: 'Japan',
     region: 'Japan',
     price_rating: 2,
     website_url: 'http://www.tanigawadake-rw.com/gelande/',
     lat: 36.836540,
     lng: 138.96156,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381752/lfpeameyfsc1lzbrjvrz.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381746/qgdnhsbep9l8zczixawx.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -950,7 +951,7 @@ Resort.create([
     name: 'Kurodake',
     address: '北海道上川郡上川町字層雲峡',
     zip: '078-1701',
-    city: '-',
+    city: 'Sōunkyō',
     state_province: 'Hokkaido',
     country: 'Japan',
     region: 'Japan',
@@ -958,8 +959,8 @@ Resort.create([
     website_url: 'http://www.rinyu.co.jp/modules/pico01/',
     lat: 43.710705,
     lng: 142.938852,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381628/cix0u8535ygv6kkqboen.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381603/vjr7dovuxh5lak1rpnjq.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -971,16 +972,16 @@ Resort.create([
     name: 'Minowa',
     address: '猪苗代町横向',
     zip: '969-2751',
-    city: '-',
-    state_province: 'Yama',
+    city: 'Yama',
+    # state_province: 'Yama',
     country: 'Japan',
     region: 'Japan',
     price_rating: 2,
     website_url: 'http://www.ski-minowa.jp/',
     lat: 37.650453,
     lng: 140.255626,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381492/listy42m9q6lyucuqfco.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381471/celdvbisc1du9u0ukfcm.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1000,8 +1001,8 @@ Resort.create([
     website_url: 'http://www.nozawaski.com/',
     lat: 36.920027,
     lng: 138.451982,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381244/txmmtjq8u8ypaqqkm2la.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381230/ldbfnmjh7kpz7npod2hq.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1011,18 +1012,18 @@ Resort.create([
   },
   {
     name: 'Furano',
-    address: '〒',
+    address: '北海道富良野市中御料',
     zip: '076-8511',
-    city: '-',
-    state_province: 'Hokkaido',
+    city: 'Hokkaido',
+    # state_province: 'Hokkaido',
     country: 'Japan',
     region: 'Japan',
     price_rating: 2,
     website_url: 'http://www.princehotels.co.jp/ski/furano/',
     lat: 43.323288,
     lng: 142.354093,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381048/pbw2eftf8nskwdoajs5v.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381032/mlihsdvsdzvjlxhjyxam.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1035,15 +1036,15 @@ Resort.create([
     address: 'Cardrona Valley Rd',
     zip: '9381',
     city: 'Cardrona',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 3,
     website_url: 'https://www.cardrona.com/',
     lat: -44.873268,
     lng: 168.948797,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380820/jqp23fgwtnjxytvojza5.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380767/lwscbt32vjlmilp6zgt0.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1056,15 +1057,15 @@ Resort.create([
     address: 'Harper Road',
     zip: '7572',
     city: 'Lake Coleridge',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 3,
     website_url: 'http://www.mtolympus.co.nz/',
     lat: -43.193421,
     lng: 171.606473,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380432/vxhm6akhvl12cgvzlzm5.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380453/balew9kaepadbiabgda9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1077,15 +1078,15 @@ Resort.create([
     address: 'Mt Aspiring Rd',
     zip: '9305',
     city: 'Wanaka',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 2,
     website_url: 'http://www.treblecone.com/',
     lat: -44.643403,
     lng: 168.931298,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380251/dbkbqovtyk4s4ginzotk.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380244/sldloajonfydx0dllsnh.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1098,15 +1099,15 @@ Resort.create([
     address: '2544 Lilybank Rd',
     zip: '7999',
     city: 'Tekapo',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 3,
     website_url: 'http://www.roundhill.co.nz/',
     lat: -43.825259,
     lng: 170.656192,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380041/brbplypxzfg1cnct4iem.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380020/uynokc1pkylrb84a81tt.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1119,15 +1120,15 @@ Resort.create([
     address: 'Skippers Road',
     zip: '9300',
     city: 'Queenstown',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 2,
     website_url: 'https://www.nzski.com/queenstown/the-mountains/coronet-peak',
     lat: -44.927491,
     lng: 168.736029,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379683/rzl0tvmwu6i9wemykpm9.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379667/l8af8k9mle3egi75izld.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1140,15 +1141,15 @@ Resort.create([
     address: 'The Remarkables Ski Area',
     zip: '9300',
     city: 'Queenstown',
-    state_province: '-',
+    # state_province: '-',
     country: 'New Zealand',
     region: 'NZ/Australia',
     price_rating: 2,
     website_url: '-',
     lat: -45.054069,
     lng: 168.814304,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379498/q4tcwxduwnvluxqvdbyu.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379490/mgmg10dzk3wc789fljem.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1158,26 +1159,6 @@ Resort.create([
   }
 ])
 
-# {
-#   name:
-#   address:
-#   zip:
-#   city:
-#   state_province:
-#   country:
-#   skiable_acres:
-#   vertical_drop:
-#   peak_elevation:
-#   avg_snowfall:
-#   longest_run:
-#   num_lifts:
-#   price_rating:
-#   website_url:
-#   trail_map_url:
-#   lat:
-#   lng:
-#   profile_pic_url:
-# }
 
 Review.create([
   {
