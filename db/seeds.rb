@@ -863,15 +863,15 @@ Resort.create([
     # num_lifts:
   },
   {
-    name: 'Livingo'
-    address: 'Via Saroch, 1242/G'
-    zip: '23030'
-    city: 'Livingo'
-    state_province: 'Sondrino'
-    country: 'Italy'
-    region: 'Europe'
-    price_rating: 3
-    website_url: 'https://www.carosello3000.com/it/'
+    name: 'Livingo',
+    address: 'Via Saroch, 1242/G',
+    zip: '23030',
+    city: 'Livingo',
+    state_province: 'Sondrino',
+    country: 'Italy',
+    region: 'Europe',
+    price_rating: 3,
+    website_url: 'https://www.carosello3000.com/it/',
     lat: 46.540747,
     lng: 10.136705,
     profile_pic_url: '-',
@@ -1000,8 +1000,8 @@ Resort.create([
     website_url: 'http://www.nozawaski.com/',
     lat: 36.920027,
     lng: 138.451982,
-    profile_pic_url:
-    trail_map_url:
+    profile_pic_url: '-',
+    trail_map_url: '-'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1042,8 +1042,8 @@ Resort.create([
     website_url: 'https://www.cardrona.com/',
     lat: -44.873268,
     lng: 168.948797,
-    profile_pic_url:
-    trail_map_url:
+    profile_pic_url: '-',
+    trail_map_url: '-'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1083,7 +1083,7 @@ Resort.create([
     price_rating: 2,
     website_url: 'http://www.treblecone.com/',
     lat: -44.643403,
-    lng: 168.931298
+    lng: 168.931298,
     profile_pic_url: '-',
     trail_map_url: '-'
     # skiable_acres:

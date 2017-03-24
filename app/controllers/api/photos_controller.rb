@@ -1,4 +1,6 @@
 class Api::PhotosController < ApplicationController
+  before_action :require_login, only: [:create, :destroy]
+
   def index
     @photos = Photo.where("resort_id = #{params[:resort_id]}")
     render :index
