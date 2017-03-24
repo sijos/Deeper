@@ -29,6 +29,10 @@ class ResortDetail extends React.Component {
     }
   }
 
+  // componentWillUnmount() {
+  //   this.props.clearResortData();
+  // }
+
   mapPriceToSym() {
     let dollars = "";
     for (let i = 0; i < this.props.resort.price_rating; i++) {

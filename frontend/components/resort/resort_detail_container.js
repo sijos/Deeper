@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchResort } from '../../actions/resort_actions';
+import { fetchResort, clearResortData } from '../../actions/resort_actions';
 import { fetchReviews, deleteReview } from '../../actions/review_actions';
 import { fetchPhotos } from '../../actions/photo_actions';
 import ResortDetail from './resort_detail';
@@ -16,7 +16,8 @@ const mapDispatchToProps = (dispatch) => ({
   fetchResort: (id) => dispatch(fetchResort(id)),
   fetchReviews: (id) => dispatch(fetchReviews(id)),
   fetchPhotos: (id) => dispatch(fetchPhotos(id)),
-  deleteReview: (id) => dispatch(deleteReview(id))
+  deleteReview: (id) => dispatch(deleteReview(id)),
+  clearResortData: () => dispatch(clearResortData())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ResortDetail);

@@ -1,15 +1,5 @@
-import { RECEIVE_RESORT } from '../actions/resort_actions';
-import { RECEIVE_REVIEW,
-        UPDATE_REVIEW,
-        REMOVE_REVIEW,
-        RECEIVE_REVIEW_ERRORS,
-        CLEAR_REVEIW_ERRORS } from '../actions/review_actions';
+import { RECEIVE_RESORT, CLEAR_RESORT_DATA } from '../actions/resort_actions';
 import merge from 'lodash/merge';
-
-const _defaultResort = {
-  reviews: [],
-  errors: []
-};
 
 const ResortReducer = (state = {}, action) => {
   Object.freeze(state);
@@ -17,6 +7,8 @@ const ResortReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_RESORT:
       return merge({}, action.resort);
+    case CLEAR_RESORT_DATA:
+      return {};
     default:
       return state;
   }

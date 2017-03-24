@@ -41,12 +41,3 @@ class TrailMapPhoto extends React.Component {
 }
 
 export default TrailMapPhoto;
-
-//
-// let newObj = {};
-//
-// arr.forEach((element) => {
-//   if Object.keys.includes(element) {
-//     newObj[element] = obj[element]
-//   }
-// }

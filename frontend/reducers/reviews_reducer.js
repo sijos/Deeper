@@ -3,6 +3,7 @@ import { RECEIVE_REVIEW,
         REMOVE_REVIEW,
         RECEIVE_REVIEW_ERRORS,
         CLEAR_REVEIW_ERRORS } from '../actions/review_actions';
+import { CLEAR_RESORT_DATA } from '../actions/resort_actions';
 import merge from 'lodash/merge';
 
 const _noReviews = {
@@ -25,6 +26,8 @@ const ReviewsReducer = (state = _noReviews, action) => {
       return merge({}, state, {errors});
     case CLEAR_REVEIW_ERRORS:
       return merge({}, state, {errors: []});
+    case CLEAR_RESORT_DATA:
+      return merge({}, _noReviews);
     default:
       return state;
   }
