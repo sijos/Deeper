@@ -95,7 +95,7 @@ class SearchMap extends React.Component {
     if (listHoverItem) {
       listHoverItem.onmouseover = () => {
         this.markers.forEach(opaqueMarker => {
-          opaqueMarker.setOpacity(0.4);
+          opaqueMarker.setOpacity(0.25);
         });
         marker.setOpacity(1);
         infoWindow.open(this.map, marker);
