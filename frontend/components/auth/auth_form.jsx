@@ -65,13 +65,13 @@ class AuthForm extends React.Component {
         setTimeout(fillInputs.bind(this), int, arr, int);
       } else {
         setTimeout(() => (
-          document.getElementById("submit").click()), 500);
+          document.getElementById("submit").click()), 350);
       }
     };
 
     this.setState({username: "", password: ""});
     let arr = "GuestUser".split("");
-    setTimeout(fillInputs.bind(this), 600, arr, 100);
+    setTimeout(fillInputs.bind(this), 500, arr, 100);
   }
 
   renderErrors() {
