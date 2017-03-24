@@ -15,7 +15,7 @@ class SearchMap extends React.Component {
   componentDidMount() {
     const mapOptions = {
       center: { lat: 40.8898739, lng: -112.7767094 },
-      zoom: 5
+      zoom: 4
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
@@ -30,11 +30,13 @@ class SearchMap extends React.Component {
         this.markers[0].position.lng()
       );
       this.map.setCenter(pos);
+      this.map.panBy(-250, 0);
       this.map.setZoom(10);
     } else if (this.markers.length === 19) {
       let pos = new google.maps.LatLng(40.8898739, -112.7767094);
       this.map.setCenter(pos);
-      this.map.setZoom(5);
+      this.map.panBy(-40, 0);
+      this.map.setZoom(4);
     }
   }
 
