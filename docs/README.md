@@ -1,15 +1,15 @@
-# GoDeeper
+# Snowscape
 
 [Heroku link][heroku]
 
 [Trello link][trello]
 
-[heroku]: https://full-stack-project.herokuapp.com/#/
+[heroku]: hhttps://snowscape.herokuapp.com/#/
 [trello]: https://trello.com/b/uEGklG3h/full-stack-project
 
 ## Minimum Viable Product
 
-Deeper is a web application inspired by Yelp specifically targeted toward reviews
+Snowscape is a web application inspired by Yelp specifically targeted toward reviews
 of ski resorts across the world. Deeper is built using Ruby on Rails and React/Redux.
 By the end of Week 9, this app will, at a minimum, satisfy the following criteria
 with smooth, bug-free navigation, adequate seed data and sufficient CSS styling:
