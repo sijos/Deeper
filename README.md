@@ -9,7 +9,7 @@ Snowscape, a search engine and review site for ski resorts, is a full-stack web 
 
 ### Home
 
-The primary focus of Snowscape are ski resorts, which are stored in a `resorts` table. The landing page for Snowscape features a embedded background video and a prominent search bar that allows users to search the `resorts` database by resort `name`. It also includes links to the detail pages for the 8 most popular resorts, which are determined by calculating the number of reviews for each resort and sorting on this total.
+Snowscape is primarily focused on ski resorts, which are stored in a `resorts` table. The landing page for Snowscape features a embedded background video and a prominent search bar that allows users to search the `resorts` database by resort `name`. It also includes links to the detail pages for the 8 most popular resorts, which are determined by calculating the number of reviews for each resort and sorting on this total.
 
 ### Resort Search
 
@@ -21,7 +21,7 @@ Markers showing the location for each of the matched resorts are placed on the m
  <img src="readme_photos/search-page.png">
 </p>
 
-If the results of the user's search query only returns one resort, the map will automatically zoom and center on that resort's location (adjusted east do account for the portion of the map covered by the search index).
+If the results of the user's search query only returns one resort, the map will automatically zoom and center on that resort's location (adjusted east to account for the portion of the map covered by the search index).
 
 <p align="center">
  <img src="readme_photos/single-resort-search.png">
