@@ -1,4 +1,6 @@
 class Api::ReviewsController < ApplicationController
+  before_action :require_login, only: [:create, :update, :destroy]
+
   def index
     @reviews = Review.where("resort_id = #{params[:resort_id]}")
     render :index
