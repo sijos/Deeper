@@ -433,8 +433,8 @@ Resort.create([
     website_url: 'https://www.aspensnowmass.com/',
     lat: 39.220431,
     lng: -106.861513,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393541/hsj27rerfo5n0lhlztbo.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393508/v2woqhjevhejlq3rkdoe.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -454,8 +454,8 @@ Resort.create([
     website_url: 'http://www.coppercolorado.com/',
     lat: 39.501941,
     lng: -106.154069,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393347/djv1f1mp7ul4axdtv8zi.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393325/pof31vygmb9vuufq4fox.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -475,8 +475,8 @@ Resort.create([
     website_url: 'https://www.steamboat.com/',
     lat: 40.457175,
     lng: -106.804533,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393123/wqpuy1njv0zojx44qb8n.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393093/tu76xi1re1uxdhdavoro.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -496,8 +496,8 @@ Resort.create([
     website_url: 'http://www.breckenridge.com/',
     lat: 39.478262,
     lng:  -106.07232,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392911/rakqinm4phxmjaeapjpd.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392886/qgykq1x0kg0vl8nvya3d.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -517,8 +517,8 @@ Resort.create([
     website_url: 'http://www.tellurideskiresort.com/',
     lat: 37.936520,
     lng:  -107.846386,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392742/gbumg26myhlimpvxz940.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392729/ry34kr2wfd7drjcenhu9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -538,8 +538,8 @@ Resort.create([
     website_url: 'http://www.keystoneresort.com/',
     lat: 39.605331,
     lng: -105.976513,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392626/vhfttwk7s4hfi0l80ivv.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392619/exa7a6z4plapjqsqabcp.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -559,8 +559,8 @@ Resort.create([
     website_url: 'https://www.sunvalley.com/',
     lat: 43.696962,
     lng: -114.352886,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392508/xqxrfolndmlxnixfldsi.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392493/jpruv5kejceelrzhngy7.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -580,8 +580,8 @@ Resort.create([
     website_url: 'http://bigskyresort.com/',
     lat: 45.283436,
     lng: -111.400368,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392385/zqom1j2ocxazw4gebjep.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392355/i0jws8uv9tmpnriiucnj.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -601,8 +601,8 @@ Resort.create([
     website_url: 'http://squawalpine.com/',
     lat: 39.197607,
     lng: -120.235442,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392247/o2ja5pje3ziktudmgdsv.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392227/dwpyyfbnuikjfg8cz07e.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -622,8 +622,8 @@ Resort.create([
     website_url: 'http://www.skitaos.com/',
     lat: 36.596000,
     lng: -105.4545,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391879/w4ko5fzuwviimptm6irr.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391870/udzl8esczuvttwciunbi.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -643,8 +643,8 @@ Resort.create([
     website_url: 'http://www.skisugar.com/',
     lat: 36.129954,
     lng: -81.856974,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391690/neu1qfd1d9nla21szo3s.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391708/khii5neakxndtiv3tpgu.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -664,8 +664,8 @@ Resort.create([
     website_url: 'http://www.sugarbush.com/',
     lat: 44.145466,
     lng: -72.879556,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391507/awbvl72egnd0tlgbwysa.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391471/wkrp3cm3unwf4mwnptho.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -685,8 +685,8 @@ Resort.create([
     website_url: 'https://www.stratton.com/',
     lat: 43.113441,
     lng: -72.90813,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391338/zgn1ozowkad7tqwagxuc.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391327/g3ihqx9ict1jgbrknkgr.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -706,8 +706,8 @@ Resort.create([
     website_url: 'http://www.killington.com/site/index.html',
     lat: 43.619801,
     lng: -72.80271,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391129/f8tk6todvapbox8egdal.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391116/faz40un9uoitxaocahfc.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -727,8 +727,8 @@ Resort.create([
     website_url: 'http://www.skiarlberg.at/en',
     lat: 47.133335,
     lng: 10.224125,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390881/tfvm3jzps5zqlqnelq59.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390873/dogf2zcitcljle658err.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -748,8 +748,8 @@ Resort.create([
     website_url: 'https://www.kitzski.at/',
     lat: 47.442905,
     lng: 12.389977,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390629/gj4jk6v1tuygcvm9papf.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390619/y8xaaurfyvztyjve3l6a.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -769,8 +769,8 @@ Resort.create([
     website_url: 'https://www.nendaz.ch/',
     lat: 46.180595,
     lng:  7.294582,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390500/yscwjqu2yfo2htkgacf1.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390483/xr7ddsowpirtj8nfoju9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -790,8 +790,8 @@ Resort.create([
     website_url: 'http://www.skizermatt.com/',
     lat: 46.021956,
     lng: 7.747205,
-    profile_pic_url: '-',
-    trail_map_url: '-'
+    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390248/x3h7lzupcoqvxkyrjxem.jpg',
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390222/qdrmfdidrowwjpxqvdne.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
