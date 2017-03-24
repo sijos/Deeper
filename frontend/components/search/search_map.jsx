@@ -30,9 +30,9 @@ class SearchMap extends React.Component {
         this.markers[0].position.lng()
       );
       this.map.setCenter(pos);
-      this.map.panBy(-250, 0);
       this.map.setZoom(10);
-    } else if (this.markers.length === 19) {
+      this.map.panBy(-250, 0);
+    } else if (this.markers.length === 54) {
       let pos = new google.maps.LatLng(40.8898739, -112.7767094);
       this.map.setCenter(pos);
       this.map.panBy(-40, 0);
@@ -104,7 +104,7 @@ class SearchMap extends React.Component {
         this.markers.forEach(fullMarker => {
           fullMarker.setOpacity(1);
         });
-        infoWindow.close(this.map, marker)
+        infoWindow.close(this.map, marker);
       };
     }
   }
