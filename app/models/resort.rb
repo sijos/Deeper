@@ -1,5 +1,5 @@
 class Resort < ApplicationRecord
-  validates :name, :address, :zip, :city, :state_province, :country, :region,
+  validates :name, :address, :zip, :city, :state_province, :country,
     :price_rating, :website_url, :lat, :lng, presence: true
   validates :price_rating, inclusion: [1, 2, 3, 4]
   validates :name, uniqueness: true
@@ -26,3 +26,6 @@ class Resort < ApplicationRecord
     self.reviews.sort { |a, b| b.updated_at <=> a.updated_at }
   end
 end
+
+# add back after database works
+# :region,
