@@ -92,7 +92,7 @@ class PhotoForm extends React.Component {
             </Dropzone>
           </div>
 
-          <div>
+          <div className="photo-preview">
             {this.state.url === '' ? null :
             <div>
               <p>{this.state.uploadedFile.name}</p>
