@@ -624,7 +624,7 @@ Resort.create([
     lat: 36.596000,
     lng: -105.4545,
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391879/w4ko5fzuwviimptm6irr.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391870/udzl8esczuvttwciunbi.jpg'
+    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490511282/aufhak9ig1krmjpvqem6.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -748,7 +748,7 @@ Resort.create([
     lat: 47.442905,
     lng: 12.389977,
     profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390629/gj4jk6v1tuygcvm9papf.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390619/y8xaaurfyvztyjve3l6a.jpg'
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391190/ihpaq1vgwkyhzdwvnb7m.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
