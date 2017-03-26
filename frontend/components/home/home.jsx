@@ -7,7 +7,9 @@ const Home = () => (
   <div className="main-content">
     <section className="video-holder">
       <video loop muted autoPlay className="fullscreen-bg__video">
-        <source src="http://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4" type="video/mp4"/>
+        <source src="http://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4"
+          poster="http://res.cloudinary.com/dagjelvab/image/upload/v1490512290/video_poster.png"
+          type="video/mp4"/>
       </video>
       <nav className="title-holder">
         <h1 className="title">Snowscape</h1>
@@ -21,6 +23,3 @@ const Home = () => (
 );
 
 export default Home;
-
-// add nav arrow styling here later:
-// <div className="arrow" />
