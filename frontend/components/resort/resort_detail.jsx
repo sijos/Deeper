@@ -84,7 +84,9 @@ class ResortDetail extends React.Component {
               </ul>
             </div>
             {this.renderButtons()}
+            <a href={resort.website_url}>{resort.website_url}</a>
           </div>
+
           <div className="resort-photos-container">
             <TrailMapPhoto trailMapUrl={resort.trail_map_url} />
             <div className="photo-carousel">
@@ -107,3 +109,5 @@ class ResortDetail extends React.Component {
 }
 
 export default ResortDetail;
+
+// <AdditionalStats resort={this.props.resort} />

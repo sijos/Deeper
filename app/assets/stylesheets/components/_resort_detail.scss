@@ -24,6 +24,14 @@
   display: flex;
 }
 
+.resort-detail a {
+  position: absolute;
+  top: 160px;
+  right: 11%;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
 .resort-details {
   flex-direction: column;
 }
