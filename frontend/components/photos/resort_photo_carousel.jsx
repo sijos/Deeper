@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import PhotoCarouselItem from './photo_carousel_item';
+import PhotoContainer from './photo_container';
 
 const ResortPhotoCarousel = ({ photos }) => {
   let settings = {
@@ -18,7 +18,7 @@ const ResortPhotoCarousel = ({ photos }) => {
       <Slider {...settings}>
         { photos.map((photo) => (
             <div key={photo.id}>
-              <PhotoCarouselItem photoUrl={photo.url} />
+              <PhotoContainer photo={photo} />
             </div>
           ))
         }

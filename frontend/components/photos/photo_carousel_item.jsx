@@ -7,6 +7,7 @@ class PhotoCarouselItem extends React.Component {
     this.state = { modalOpen: false };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   openModal() {
@@ -17,11 +18,29 @@ class PhotoCarouselItem extends React.Component {
     this.setState({ modalOpen: false});
   }
 
+  deleteButton() {
+    if (this.props.currentUser &&
+      this.props.currentUser.id === this.props.photo.poster.id) {
+      return (
+        <button onClick={this.handleDelete(this.props.photo.id)}>
+          Delete Photo</button>
+      );
+    }
+  }
+
+  handleDelete(id) {
+    return (e) => {
+      e.preventDefault();
+      this.props.deletePhoto(id);
+    };
+  }
+
   render() {
+    const photo = this.props.photo;
     return (
       <div>
         <div onClick={this.openModal}>
-          <img className="slider-img clickable" src={this.props.photoUrl} />
+          <img className="slider-img clickable" src={photo.url} />
         </div>
 
         <Modal
@@ -30,7 +49,8 @@ class PhotoCarouselItem extends React.Component {
           onRequestClose={this.closeModal}
           className="photo-modal modal-form"
           overlayClassName="modal-form-overlay">
-          <img className="lg-slider-img" src={this.props.photoUrl} />
+          <img className="lg-slider-img" src={photo.url} />
+          {this.deleteButton()}
         </Modal>
       </div>
     );
