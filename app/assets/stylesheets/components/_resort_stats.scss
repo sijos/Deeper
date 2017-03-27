@@ -1,0 +1,23 @@
+.toggle-stats {
+  position: absolute;
+  right: 11%;
+  top: 403px;
+  cursor: pointer;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.stat-col {
+  text-align: center;
+}
+
+.stat-title {
+  font-weight: bold;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
