@@ -8,7 +8,7 @@
 .video-holder {
 	position: relative;
 	width: 100vw;
-  height: 56.25vw;
+  height: 45vw;
 }
 
 .title-holder {
@@ -36,11 +36,12 @@
 
 .index-container {
   height: 300px;
-  width: 80%;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .index-container > h2 {
