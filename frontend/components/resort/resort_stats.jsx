@@ -3,7 +3,7 @@ import React from 'react';
 class ResortStats extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { display: "hidden" };
+    this.state = { display: "stats-row" };
     this.toggleStats = this.toggleStats.bind(this);
   }
 
