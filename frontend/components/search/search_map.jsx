@@ -93,14 +93,14 @@ class SearchMap extends React.Component {
 
     const listHoverItem = document.getElementById(`search-item-${resort.id}`);
     if (listHoverItem) {
-      listHoverItem.onmouseover = () => {
+      listHoverItem.onmouseenter = () => {
         this.markers.forEach(opaqueMarker => {
           opaqueMarker.setOpacity(0.25);
         });
         marker.setOpacity(1);
         infoWindow.open(this.map, marker);
       };
-      listHoverItem.onmouseout = () => {
+      listHoverItem.onmouseleave = () => {
         this.markers.forEach(fullMarker => {
           fullMarker.setOpacity(1);
         });
