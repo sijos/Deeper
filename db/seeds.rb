@@ -7,16 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-scott =  { username: 'scott', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" }
-zestyyy =  { username: 'zestyyy', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" }
+scott =  { username: 'scott', password: 'password', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1489891110/boarder-icon.jpg" }
+zestyyy =  { username: 'zestyyy', password: 'shredbot', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490118437/girl-icon.jpg" }
 rage =  { username: 'rage', password: 'password' }
-penguin =  { username: 'penguin', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118540/penguin-icon.jpg" }
-Skimax =  { username: 'Skimax', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
+penguin =  { username: 'penguin', password: 'password', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490118540/penguin-icon.jpg" }
+Skimax =  { username: 'Skimax', password: 'password', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
 Randy =  { username: 'Randy', password: 'password' }
 kale =  { username: 'kale', password: 'password' }
 powderHound =  { username: 'powderHound', password: 'password' }
-doneSki =  { username: 'doneSki', password: 'password', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
-oreo =  { username: 'oreo', password: 'shredbot', profile_pic_url: "http://res.cloudinary.com/dagjelvab/image/upload/v1490200976/114293-glowing-purple-neon-icon-sports-hobbies-people-snowboarder_fw87xr.png" }
+doneSki =  { username: 'doneSki', password: 'password', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490118284/skier-profile.jpg" }
+oreo =  { username: 'oreo', password: 'shredbot', profile_pic_url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490200976/114293-glowing-purple-neon-icon-sports-hobbies-people-snowboarder_fw87xr.png" }
 GuestUser =  { username: 'GuestUser', password: 'GuestUser' }
 dellyBird =  { username: 'dellyBird', password: 'shredbot' }
 andhudhow =  { username: 'andhudhow', password: 'password' }
@@ -43,10 +43,10 @@ Resort.create([
     num_lifts: 31,
     price_rating: 4,
     website_url: 'http://www.vail.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708199/resort%20pics/vail-map.png',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489708199/resort%20pics/vail-map.png',
     lat: 39.606138,
     lng: -106.354973,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708055/resort%20pics/vail-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489708055/resort%20pics/vail-profile.jpg'
   },
   {
     name: 'Heavenly',
@@ -64,10 +64,10 @@ Resort.create([
     num_lifts: 28,
     price_rating: 4,
     website_url: 'http://www.skiheavenly.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708288/resort%20pics/heavenly-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489708288/resort%20pics/heavenly-map.jpg',
     lat: 38.956829,
     lng: -119.942632,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708465/resort%20pics/heavenly-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489708465/resort%20pics/heavenly-profile.jpg'
   },
   {
     name: 'Whistler Blackcomb',
@@ -85,10 +85,10 @@ Resort.create([
     num_lifts: 37,
     price_rating: 3,
     website_url: 'https://www.whistlerblackcomb.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489966858/whistler-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489966858/whistler-map.jpg',
     lat: 50.114964,
     lng: -122.948647,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489708609/resort%20pics/whistler-profile.jpg',
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489708609/resort%20pics/whistler-profile.jpg',
   },
   {
     name: 'Kirkwood',
@@ -106,10 +106,10 @@ Resort.create([
     num_lifts: 15,
     price_rating: 3,
     website_url: 'http://www.kirkwood.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489966720/kirkwood-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489966720/kirkwood-map.jpg',
     lat: 38.684751,
     lng: -120.065167,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489782484/kirkwood-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489782484/kirkwood-profile.jpg'
   },
   {
     name: 'Park City',
@@ -127,10 +127,10 @@ Resort.create([
     num_lifts: 41,
     price_rating: 4,
     website_url: 'http://www.parkcitymountain.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489783620/park-city-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489783620/park-city-map.jpg',
     lat: 40.651465,
     lng: -111.507807,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489783843/park-city-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489783843/park-city-profile.jpg'
   },
   {
     name: 'Brighton',
@@ -148,10 +148,10 @@ Resort.create([
     num_lifts: 6,
     price_rating: 3,
     website_url: 'http://www.brightonresort.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489784575/brighton-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489784575/brighton-map.jpg',
     lat: 40.592546,
     lng: -111.577642,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489784469/brighton-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489784469/brighton-profile.jpg'
   },
   {
     name: 'Snowbird',
@@ -169,10 +169,10 @@ Resort.create([
     num_lifts: 11,
     price_rating: 4,
     website_url: 'http://www.snowbird.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489786273/snowbird-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489786273/snowbird-map.jpg',
     lat: 40.580982,
     lng: -111.657615,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489786126/snowbird-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489786126/snowbird-profile.jpg'
   },
   {
     name: 'Jackson Hole',
@@ -190,10 +190,10 @@ Resort.create([
     num_lifts: 12,
     price_rating: 4,
     website_url: 'https://www.jacksonhole.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489787053/jackson-hole-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489787053/jackson-hole-map.jpg',
     lat: 43.587520,
     lng: -110.827868,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489786655/jackson-hole-profile.png'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489786655/jackson-hole-profile.png'
   },
   {
     name: 'Mont-Tremblant',
@@ -211,10 +211,10 @@ Resort.create([
     num_lifts: 14,
     price_rating: 3,
     website_url: 'https://www.tremblant.ca/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489788395/mont-tremblant-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489788395/mont-tremblant-map.jpg',
     lat: 46.209642,
     lng: -74.585253,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489787919/mont-tremblant-profile.jpg',
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489787919/mont-tremblant-profile.jpg',
   },
   {
     name: 'Powder Mountain',
@@ -232,10 +232,10 @@ Resort.create([
     num_lifts: 9,
     price_rating: 2,
     website_url: 'http://www.powdermountain.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965942/powder-mountain-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965942/powder-mountain-map.jpg',
     lat: 41.382337,
     lng: -111.763867,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965596/powder-mountain-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965596/powder-mountain-profile.jpg'
   },
   {
     name: 'Beaver Creek',
@@ -253,10 +253,10 @@ Resort.create([
     num_lifts: 25,
     price_rating: 4,
     website_url: 'http://www.beavercreek.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965991/beaver-creek-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965991/beaver-creek-map.jpg',
     lat: 39.604225,
     lng:  -106.516515,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965565/beaver-creek-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965565/beaver-creek-profile.jpg'
   },
   {
     name: 'Revelstoke',
@@ -274,10 +274,10 @@ Resort.create([
     num_lifts: 5,
     price_rating: 2,
     website_url: 'http://www.revelstokemountainresort.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489966046/revelstoke-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489966046/revelstoke-map.jpg',
     lat: 50.958303,
     lng: -118.163775,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965529/revelstoke-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965529/revelstoke-profile.jpg'
   },
   {
     name: 'Snowshoe',
@@ -295,10 +295,10 @@ Resort.create([
     num_lifts: 14,
     price_rating: 2,
     website_url: 'https://www.snowshoemtn.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489967041/snowshoe-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489967041/snowshoe-map.jpg',
     lat: 38.410796,
     lng: -79.993603,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1489965647/snowshoe-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1489965647/snowshoe-profile.jpg'
   },
   {
     name: 'Solitude',
@@ -316,10 +316,10 @@ Resort.create([
     num_lifts: 8,
     price_rating: 2,
     website_url: 'http://skisolitude.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199492/solitude-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199492/solitude-map.jpg',
     lat: 40.621062,
     lng: -111.593255,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199419/solitude-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199419/solitude-profile.jpg'
   },
   {
     name: 'Northstar',
@@ -337,10 +337,10 @@ Resort.create([
     num_lifts: 20,
     price_rating: 3,
     website_url: 'http://www.northstarcalifornia.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199643/northstar-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199643/northstar-map.jpg',
     lat: 39.274839,
     lng: -120.120605,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199554/northstar-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199554/northstar-profile.jpg'
   },
   {
     name: 'Mammoth',
@@ -358,10 +358,10 @@ Resort.create([
     num_lifts: 28,
     price_rating: 4,
     website_url: 'http://www.mammothmountain.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199744/mammoth-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199744/mammoth-map.jpg',
     lat: 37.638831,
     lng: -119.026217,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199696/mammoth-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199696/mammoth-profile.jpg'
   },
   {
     name: 'Sunshine Village',
@@ -379,10 +379,10 @@ Resort.create([
     num_lifts: 12,
     price_rating: 2,
     website_url: 'http://www.skibanff.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199888/sunshine-village-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199888/sunshine-village-map.jpg',
     lat: 51.115186,
     lng: -115.763276,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199806/sunshine-village-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199806/sunshine-village-profile.jpg'
   },
   {
     name: 'Lake Louise',
@@ -400,10 +400,10 @@ Resort.create([
     num_lifts: 9,
     price_rating: 2,
     website_url: 'http://www.skilouise.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200005/lake-louise-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490200005/lake-louise-map.jpg',
     lat: 51.441921,
     lng: -116.162172,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490199936/lake-louise-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490199936/lake-louise-profile.jpg'
   },
   {
     name: 'Sierra at Tahoe',
@@ -421,10 +421,10 @@ Resort.create([
     num_lifts: 14,
     price_rating: 3,
     website_url: 'https://www.sierraattahoe.com/',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200294/sierra-map.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490200294/sierra-map.jpg',
     lat: 38.799350,
     lng: -120.080906,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490200105/sierra-profile.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490200105/sierra-profile.jpg'
   },
   {
     name: 'Aspen/Snowmass',
@@ -438,8 +438,8 @@ Resort.create([
     website_url: 'https://www.aspensnowmass.com/',
     lat: 39.220431,
     lng: -106.861513,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393541/hsj27rerfo5n0lhlztbo.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393508/v2woqhjevhejlq3rkdoe.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393541/hsj27rerfo5n0lhlztbo.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393508/v2woqhjevhejlq3rkdoe.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -459,8 +459,8 @@ Resort.create([
     website_url: 'http://www.coppercolorado.com/',
     lat: 39.501941,
     lng: -106.154069,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393347/djv1f1mp7ul4axdtv8zi.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393325/pof31vygmb9vuufq4fox.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393347/djv1f1mp7ul4axdtv8zi.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393325/pof31vygmb9vuufq4fox.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -480,8 +480,8 @@ Resort.create([
     website_url: 'https://www.steamboat.com/',
     lat: 40.457175,
     lng: -106.804533,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393123/wqpuy1njv0zojx44qb8n.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490393093/tu76xi1re1uxdhdavoro.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393123/wqpuy1njv0zojx44qb8n.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490393093/tu76xi1re1uxdhdavoro.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -501,8 +501,8 @@ Resort.create([
     website_url: 'http://www.breckenridge.com/',
     lat: 39.478262,
     lng:  -106.07232,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392911/rakqinm4phxmjaeapjpd.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392886/qgykq1x0kg0vl8nvya3d.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392911/rakqinm4phxmjaeapjpd.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392886/qgykq1x0kg0vl8nvya3d.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -522,8 +522,8 @@ Resort.create([
     website_url: 'http://www.tellurideskiresort.com/',
     lat: 37.936520,
     lng:  -107.846386,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392742/gbumg26myhlimpvxz940.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392729/ry34kr2wfd7drjcenhu9.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392742/gbumg26myhlimpvxz940.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392729/ry34kr2wfd7drjcenhu9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -543,8 +543,8 @@ Resort.create([
     website_url: 'http://www.keystoneresort.com/',
     lat: 39.605331,
     lng: -105.976513,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392626/vhfttwk7s4hfi0l80ivv.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392619/exa7a6z4plapjqsqabcp.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392626/vhfttwk7s4hfi0l80ivv.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392619/exa7a6z4plapjqsqabcp.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -564,8 +564,8 @@ Resort.create([
     website_url: 'https://www.sunvalley.com/',
     lat: 43.696962,
     lng: -114.352886,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392508/xqxrfolndmlxnixfldsi.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392493/jpruv5kejceelrzhngy7.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392508/xqxrfolndmlxnixfldsi.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392493/jpruv5kejceelrzhngy7.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -585,8 +585,8 @@ Resort.create([
     website_url: 'http://bigskyresort.com/',
     lat: 45.283436,
     lng: -111.400368,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392385/zqom1j2ocxazw4gebjep.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392355/i0jws8uv9tmpnriiucnj.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392385/zqom1j2ocxazw4gebjep.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392355/i0jws8uv9tmpnriiucnj.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -606,8 +606,8 @@ Resort.create([
     website_url: 'http://squawalpine.com/',
     lat: 39.197607,
     lng: -120.235442,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392247/o2ja5pje3ziktudmgdsv.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490392227/dwpyyfbnuikjfg8cz07e.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392247/o2ja5pje3ziktudmgdsv.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490392227/dwpyyfbnuikjfg8cz07e.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -627,8 +627,8 @@ Resort.create([
     website_url: 'http://www.skitaos.com/',
     lat: 36.596000,
     lng: -105.4545,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391879/w4ko5fzuwviimptm6irr.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490511282/aufhak9ig1krmjpvqem6.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391879/w4ko5fzuwviimptm6irr.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490511282/aufhak9ig1krmjpvqem6.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -648,8 +648,8 @@ Resort.create([
     website_url: 'http://www.skisugar.com/',
     lat: 36.129954,
     lng: -81.856974,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391690/neu1qfd1d9nla21szo3s.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391708/khii5neakxndtiv3tpgu.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391690/neu1qfd1d9nla21szo3s.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391708/khii5neakxndtiv3tpgu.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -669,8 +669,8 @@ Resort.create([
     website_url: 'http://www.sugarbush.com/',
     lat: 44.145466,
     lng: -72.879556,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391507/awbvl72egnd0tlgbwysa.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391471/wkrp3cm3unwf4mwnptho.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391507/awbvl72egnd0tlgbwysa.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391471/wkrp3cm3unwf4mwnptho.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -690,8 +690,8 @@ Resort.create([
     website_url: 'https://www.stratton.com/',
     lat: 43.113441,
     lng: -72.90813,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391338/zgn1ozowkad7tqwagxuc.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391327/g3ihqx9ict1jgbrknkgr.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391338/zgn1ozowkad7tqwagxuc.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391327/g3ihqx9ict1jgbrknkgr.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -711,8 +711,8 @@ Resort.create([
     website_url: 'http://www.killington.com/site/index.html',
     lat: 43.619801,
     lng: -72.80271,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391129/f8tk6todvapbox8egdal.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490391116/faz40un9uoitxaocahfc.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391129/f8tk6todvapbox8egdal.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391116/faz40un9uoitxaocahfc.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -731,8 +731,8 @@ Resort.create([
     website_url: 'http://www.skiarlberg.at/en',
     lat: 47.133335,
     lng: 10.224125,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390881/tfvm3jzps5zqlqnelq59.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390873/dogf2zcitcljle658err.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390881/tfvm3jzps5zqlqnelq59.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390873/dogf2zcitcljle658err.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -751,7 +751,7 @@ Resort.create([
     website_url: 'https://www.kitzski.at/',
     lat: 47.442905,
     lng: 12.389977,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390629/gj4jk6v1tuygcvm9papf.jpg',
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390629/gj4jk6v1tuygcvm9papf.jpg',
     trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490391190/ihpaq1vgwkyhzdwvnb7m.jpg'
     # skiable_acres:
     # vertical_drop:
@@ -771,8 +771,8 @@ Resort.create([
     website_url: 'https://www.nendaz.ch/',
     lat: 46.180595,
     lng:  7.294582,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390500/yscwjqu2yfo2htkgacf1.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390483/xr7ddsowpirtj8nfoju9.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390500/yscwjqu2yfo2htkgacf1.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390483/xr7ddsowpirtj8nfoju9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -791,8 +791,8 @@ Resort.create([
     website_url: 'http://www.skizermatt.com/',
     lat: 46.021956,
     lng: 7.747205,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390248/x3h7lzupcoqvxkyrjxem.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490390222/qdrmfdidrowwjpxqvdne.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390248/x3h7lzupcoqvxkyrjxem.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490390222/qdrmfdidrowwjpxqvdne.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -811,8 +811,8 @@ Resort.create([
     website_url: 'http://www.davos.ch/winter/berge/jakobshorn/',
     lat: 46.772448,
     lng: 9.849322,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382943/lvk0haxgazdjyd1ysfdk.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382937/ijxfyyipkxuykmuwn8rr.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382943/lvk0haxgazdjyd1ysfdk.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382937/ijxfyyipkxuykmuwn8rr.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -831,8 +831,8 @@ Resort.create([
     website_url: 'http://www.chamonix.com/chamonix-mont-blanc,0,en.html',
     lat: 45.923961,
     lng: 6.863494,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382796/djfw6gyofrc0hjnty3hm.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382781/icrxh9uikqfbcerczrht.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382796/djfw6gyofrc0hjnty3hm.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382781/icrxh9uikqfbcerczrht.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -851,8 +851,8 @@ Resort.create([
     website_url: 'https://www.skipass-meribel.com/fr/',
     lat: 45.390905,
     lng: 6.568081,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382586/tzj4ryngrj9xn8ueodo5.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382573/knhrp9gsmsgfoyjnao00.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382586/tzj4ryngrj9xn8ueodo5.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382573/knhrp9gsmsgfoyjnao00.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -872,8 +872,8 @@ Resort.create([
     website_url: 'https://www.carosello3000.com/it/',
     lat: 46.540747,
     lng: 10.136705,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382437/r0iuw7nisejkbp1lv4c3.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382430/fsqyoox9rkylkwyrhxdh.gif'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382437/r0iuw7nisejkbp1lv4c3.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382430/fsqyoox9rkylkwyrhxdh.gif'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -893,8 +893,8 @@ Resort.create([
     website_url: 'http://www.fassa.com/?l=en',
     lat: 46.429380,
     lng: 11.694922,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382304/qrnqaj5dgl4gtx7itwdm.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382287/kvrqrczq0zeyws6ijpvm.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382304/qrnqaj5dgl4gtx7itwdm.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382287/kvrqrczq0zeyws6ijpvm.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -914,8 +914,8 @@ Resort.create([
     website_url: 'http://www.dolomitisuperski.com/en',
     lat: 46.581050,
     lng:  11.901718,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490382098/qirffzi4rpukfzou0oym.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381948/i3xanbs3nspwjfizup2o.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490382098/qirffzi4rpukfzou0oym.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381948/i3xanbs3nspwjfizup2o.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -934,8 +934,8 @@ Resort.create([
     website_url: 'http://www.tanigawadake-rw.com/gelande/',
     lat: 36.836540,
     lng: 138.96156,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381752/lfpeameyfsc1lzbrjvrz.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381746/qgdnhsbep9l8zczixawx.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381752/lfpeameyfsc1lzbrjvrz.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381746/qgdnhsbep9l8zczixawx.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -955,8 +955,8 @@ Resort.create([
     website_url: 'http://www.rinyu.co.jp/modules/pico01/',
     lat: 43.710705,
     lng: 142.938852,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381628/cix0u8535ygv6kkqboen.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381603/vjr7dovuxh5lak1rpnjq.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381628/cix0u8535ygv6kkqboen.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381603/vjr7dovuxh5lak1rpnjq.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -975,8 +975,8 @@ Resort.create([
     website_url: 'http://www.ski-minowa.jp/',
     lat: 37.650453,
     lng: 140.255626,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381492/listy42m9q6lyucuqfco.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381471/celdvbisc1du9u0ukfcm.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381492/listy42m9q6lyucuqfco.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381471/celdvbisc1du9u0ukfcm.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -996,8 +996,8 @@ Resort.create([
     website_url: 'http://www.nozawaski.com/',
     lat: 36.920027,
     lng: 138.451982,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381244/txmmtjq8u8ypaqqkm2la.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381230/ldbfnmjh7kpz7npod2hq.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381244/txmmtjq8u8ypaqqkm2la.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381230/ldbfnmjh7kpz7npod2hq.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1016,8 +1016,8 @@ Resort.create([
     website_url: 'http://www.princehotels.co.jp/ski/furano/',
     lat: 43.323288,
     lng: 142.354093,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381048/pbw2eftf8nskwdoajs5v.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490381032/mlihsdvsdzvjlxhjyxam.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381048/pbw2eftf8nskwdoajs5v.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490381032/mlihsdvsdzvjlxhjyxam.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1036,8 +1036,8 @@ Resort.create([
     website_url: 'https://www.cardrona.com/',
     lat: -44.873268,
     lng: 168.948797,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380820/jqp23fgwtnjxytvojza5.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380767/lwscbt32vjlmilp6zgt0.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380820/jqp23fgwtnjxytvojza5.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380767/lwscbt32vjlmilp6zgt0.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1056,8 +1056,8 @@ Resort.create([
     website_url: 'http://www.mtolympus.co.nz/',
     lat: -43.193421,
     lng: 171.606473,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380432/vxhm6akhvl12cgvzlzm5.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380453/balew9kaepadbiabgda9.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380432/vxhm6akhvl12cgvzlzm5.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380453/balew9kaepadbiabgda9.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1076,8 +1076,8 @@ Resort.create([
     website_url: 'http://www.treblecone.com/',
     lat: -44.643403,
     lng: 168.931298,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380251/dbkbqovtyk4s4ginzotk.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380244/sldloajonfydx0dllsnh.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380251/dbkbqovtyk4s4ginzotk.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380244/sldloajonfydx0dllsnh.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1096,8 +1096,8 @@ Resort.create([
     website_url: 'http://www.roundhill.co.nz/',
     lat: -43.825259,
     lng: 170.656192,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380041/brbplypxzfg1cnct4iem.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490380020/uynokc1pkylrb84a81tt.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380041/brbplypxzfg1cnct4iem.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490380020/uynokc1pkylrb84a81tt.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1116,8 +1116,8 @@ Resort.create([
     website_url: 'https://www.nzski.com/queenstown/the-mountains/coronet-peak',
     lat: -44.927491,
     lng: 168.736029,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379683/rzl0tvmwu6i9wemykpm9.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379667/l8af8k9mle3egi75izld.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490379683/rzl0tvmwu6i9wemykpm9.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490379667/l8af8k9mle3egi75izld.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1136,8 +1136,8 @@ Resort.create([
     website_url: '-',
     lat: -45.054069,
     lng: 168.814304,
-    profile_pic_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379498/q4tcwxduwnvluxqvdbyu.jpg',
-    trail_map_url: 'http://res.cloudinary.com/dagjelvab/image/upload/v1490379490/mgmg10dzk3wc789fljem.jpg'
+    profile_pic_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490379498/q4tcwxduwnvluxqvdbyu.jpg',
+    trail_map_url: 'https://res.cloudinary.com/dagjelvab/image/upload/v1490379490/mgmg10dzk3wc789fljem.jpg'
     # skiable_acres:
     # vertical_drop:
     # peak_elevation:
@@ -1225,10 +1225,10 @@ Review.create!([
   # }
 
 Photo.create!([
-  {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg", caption: nil},
-  {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg", caption: nil},
-  {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg", caption: nil},
-  {resort_id: 1, user_id: 1, url: "http://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg", caption: nil},
+  {resort_id: 1, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1489734590/vail1.jpg", caption: nil},
+  {resort_id: 1, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1489734637/vail2.jpg", caption: nil},
+  {resort_id: 1, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1489734676/vail3.jpg", caption: nil},
+  {resort_id: 1, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1489734720/vail4.jpg", caption: nil},
   {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262750/hgandg5purdl0rqhgiyt.jpg", caption: nil},
   {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262798/olpz80iaatpbt16kncp3.jpg", caption: nil},
   {resort_id: 2, user_id: 1, url: "https://res.cloudinary.com/dagjelvab/image/upload/v1490262810/ozzrh0oexciybzancetv.jpg", caption: nil},
