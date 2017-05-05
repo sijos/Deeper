@@ -10,6 +10,9 @@ import ResortStats from './resort_stats';
 class ResortDetail extends React.Component {
   constructor(props) {
     super(props);
+    this.props.fetchResort(this.props.params.resortId);
+    this.props.fetchReviews(this.props.params.resortId);
+    this.props.fetchPhotos(this.props.params.resortId);
   }
 
   componentWillMount() {
@@ -17,9 +20,8 @@ class ResortDetail extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchResort(this.props.params.resortId);
-    this.props.fetchReviews(this.props.params.resortId);
-    this.props.fetchPhotos(this.props.params.resortId);
+    window.resizeTo(window.screen.availWidth - 1, window.screen.availHeight);
+    window.resizeTo(window.screen.availWidth + 1, window.screen.availHeight);
   }
 
   componentWillReceiveProps(newProps) {
@@ -29,10 +31,6 @@ class ResortDetail extends React.Component {
       this.props.fetchPhotos(newProps.params.resortId);
     }
   }
-
-  // componentWillUnmount() {
-  //   this.props.clearResortData();
-  // }
 
   mapPriceToSym() {
     let dollars = "";
@@ -110,3 +108,4 @@ class ResortDetail extends React.Component {
 }
 
 export default ResortDetail;
+
