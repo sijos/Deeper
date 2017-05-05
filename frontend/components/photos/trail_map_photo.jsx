@@ -18,25 +18,29 @@ class TrailMapPhoto extends React.Component {
   }
 
   render() {
-    return (
-      <div className="trail-map-container" onClick={this.openModal}>
-        <div className="thumbnail">
-          <div className="trail-map clickable"
-            style={{backgroundImage: `url(${this.props.trailMapUrl})`}}>
+    if (this.props.trailMapUrl) {
+      return (
+        <div className="trail-map-container" onClick={this.openModal}>
+          <div className="thumbnail">
+            <div className="trail-map clickable"
+              style={{backgroundImage: `url(${this.props.trailMapUrl})`}}>
+            </div>
+            <p>Click to view full map!</p>
           </div>
-          <p>Click to view full map!</p>
-        </div>
 
-        <Modal
-          contentLabel="Modal"
-          isOpen={this.state.modalOpen}
-          onRequestClose={this.closeModal}
-          className="modal-form photo-modal"
-          overlayClassName="modal-form-overlay">
-          <img className="lg-trail-map" src={this.props.trailMapUrl} />
-        </Modal>
-      </div>
-    );
+          <Modal
+            contentLabel="Modal"
+            isOpen={this.state.modalOpen}
+            onRequestClose={this.closeModal}
+            className="modal-form photo-modal"
+            overlayClassName="modal-form-overlay">
+            <img className="lg-trail-map" src={this.props.trailMapUrl} />
+          </Modal>
+        </div>
+      ); 
+    } else {
+      return(<div></div>);
+    }
   }
 }
 
