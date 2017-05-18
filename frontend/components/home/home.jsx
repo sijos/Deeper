@@ -6,9 +6,9 @@ import SearchBarContainer from '../search/search_bar_container';
 const Home = () => (
   <div className="main-content">
     <section className="video-holder">
-      <video loop muted autoPlay className="fullscreen-bg__video">
+      <video loop muted autoPlay className="fullscreen-bg__video"
+        poster="https://res.cloudinary.com/dagjelvab/image/upload/v1490512290/video_poster.png">
         <source src="https://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4"
-          poster="https://res.cloudinary.com/dagjelvab/image/upload/v1490512290/video_poster.png"
           type="video/mp4"/>
       </video>
       <nav className="title-holder">
