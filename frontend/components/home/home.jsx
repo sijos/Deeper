@@ -8,7 +8,7 @@ const Home = () => (
     <section className="video-holder">
       <video loop muted autoPlay className="fullscreen-bg__video"
         poster="https://res.cloudinary.com/dagjelvab/image/upload/v1490512290/video_poster.png">
-        <source src="https://res.cloudinary.com/dagjelvab/video/upload/v1489725952/main_page_video_i5mhk1.mp4"
+        <source src="https://res.cloudinary.com/dagjelvab/video/upload/q_auto/v1489725952/main_page_video_i5mhk1"
           type="video/mp4"/>
       </video>
       <nav className="title-holder">
